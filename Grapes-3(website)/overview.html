@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--Navbar end-->
+</header>
+<div id="overview-text">
+<div class="subpage-head">
+  <h1>Overview</h1>
+</div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;"><a id="history">History</a></h2>
+    <p align="justify">The first cosmic ray experiment was started in 1955 by B.V. Sreekantan by setting up Cloud chambers that heralded the beginning of research at the Cosmic Ray Laboratory in Ooty. The next decade witnessed a variety of experiments involving high energy interactions and extensive air shower studies in this laboratory. World’s largest multiplate cloud chamber was operated here as part of an air shower array and significant results on the high energy nuclear interactions and cores of extensive air showers were obtained. Even before the advent of the first CERN accelerator of energy 30 GeV, a triple set-up comprising of an Air Cerenkov Counter, a multiplate cloud chamber and a total absorption spectrometer was operated in the early seventies to study the differences in the characteristics of interactions with nuclei of protons and pions in the energy range 10-40 GeV. This enabled the time structure study of the nuclear active component of air showers and led to the discovery that the nucleon-anti-nucleon production cross-section considerably increases with energy.</p>
+    <p align="justify">In continuation of this high profile and pioneering work on cosmic ray research at CRL (Ooty), GRAPES-1 experiment was upgraded in various stages to GRAPES-2. However, due to the technical and administrative problem in its further expansion, a new experiment was set up at the RAC site 8 km from the old site which is called GRAPES-3. The GRAPES-3 experiment at present is operating with ~400 (each 1 m^2) plastic scintillator detectors with a separation of 8 meters, to record the density and arrival time of particles in cosmic ray showers, and in conntinuous operation. At present, GRAPES-3 array is the highest density conventional EAS array in the world, and also, this experiment associated with a huge 560 m^2 area tracking muon detector, is also the largest area tracking detector anywhere.</p>
+    <hr>
+    </div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;"><a id="collaborations">Collaborative Institutions</a></h2>
+    <ol>
+        <li><p align="justify"><a href="http://www.tifr.res.in/" target="_blank"><b>Tata Institute of Fundamental Research</b></a></p></li>
+        <li><p align="justify"><a href="http://www.osaka-cu.ac.jp/en" target="_blank"><b>Osaka City University, Osaka, Japan</b></a></p></li>
+        <li><p align="justify"><a href="http://www.ait.ac.jp/e/" target="_blank"><b>Aichi Institute of Technology, Toyota, Japan</b></a></p></li>
+        <li><p align="justify"><a href="http://www.jcbose.ac.in/home" target="_blank"><b>J.C. Bose Institute, Kolkata, India</b></a></p></li>
+        <li><p align="justify"><a href="http://www.iiserpune.ac.in/" target="_blank"><b>Indian Institute of Science Education and Research Pune, India</b></a></p></li>
+        <li><p align="justify"><a href="http://www.iitk.ac.in/" target="_blank"><b>Indian Institute of Technology, Kanpur, India</b></a></p></li>
+        <li><p align="justify"><a href="http://www.chubu.ac.jp/english/" target="_blank"><b>Chubu University, Kasugai, Aichi, Japan</b></a></p></li>
+        <li><p align="justify"><a href="http://www.hiroshima-cu.ac.jp/english/" target="_blank"><b>Hiroshima City University, Hiroshima, Japan</b></a></p></li>
+        <li><p align="justify"><a href="https://www.kochi-u.ac.jp/english/" target="_blank"><b>Kochi University, Kochi, Japan</b></a></p></li>
+        <li><p align="justify"><a href="http://www.amu.ac.in/" target="_blank"><b>Aligarh Muslim University, Aligarh, India</b></a></p></li>
+        <li><p align="justify"><a href="http://www.nbu.ac.in/" target="_blank"><b>North Bengal University, Siliguri, India</b></a></p></li>
+        <li><p align="justify"><a href="http://www.viit.ac.in/" target="_blank"><b>Vishwakarma Institute of Information Technology, Pune, India</b></a></p></li>
+        <li><p align="justify"><a href="https://utkaluniversity.ac.in/" target="_blank"><b>Utkal University, Bhuvaneswar, India</b></a></p></li>
+        <li><p align="justify"><a href="http://www.bits-pilani.ac.in/hyderabad" target="_blank"><b>BITS Pilani, Hyderabad, India</b></a></p></li>
+        <li><p align="justify"><a href="https://www.cuk.ac.in/" target="_blank"><b>Central University of Karnataka, Gulbarga, India</b></a></p></li>
+
+    </ol>
+    <hr>
+    </div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;"><a id="detectors">Detectors and Instrumentation</a></h2>   
+	<p align="justify">The Cosmic Ray Laboratory has been at the forefront for the development of state-of-the-art detectors and electronic instruments in an effort to produce and use world-class equipment a few of which are also mentioned below. Most of the equipment costs ~10% of imported equipment, maintenance is inexpensive and prompt because of the in-house expertise, equipment can be optimized depending on the specific requirement of the experiment.
+		</p><div>
+			<li>High quality fast plastic scintillators (first time in India) with long attenuation length and high photon output</li>
+			<li>Ultra-fast amplifiers amd discriminators with time jitter ~100 ps</li>
+			<li>Time to digital converters (TDCs)</li>
+			<li>General purpose boards with USB and TCP/IP interface</li>
+			<li>FPGA boards for triggering and for data acquisition purposes</li>
+		</div>
+    </div>
+
+        <!--footer start-->
+        <div id="footer-space">
+        </div>
+        <script>
+          fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("footer-space").innerHTML = data;
+          })
+          .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--footer end-->
+         
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script>
+            function fontchange(n){
+                var text = document.getElementById('overview-text');
+                var elements = text.querySelectorAll('*:not(h1):not(h2):not(h5)');
+    
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.fontSize = n + "px";
+            }
+            }
+              var buttons = document.querySelector(".buttons");
+              var button = buttons.querySelectorAll(".button");
+        </script>
+</body>
+</html>

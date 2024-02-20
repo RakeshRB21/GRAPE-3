@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+            
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--Navbar end-->
+    </header>
+    <div id="education-text">
+        <div class="subpage-head">
+            <h1>Education</h1>
+          </div>
+        <div class="subpage-text site-text">
+            <h2 style="padding-bottom: 1%; text-align: center;">Winter school on AstroParticle Physics</h2> 
+            <p align="justify">The Winter School on Astroparticle Physics (WAPP) is being organized at the Cosmic Ray Laboratory of TIFR, Ooty in association with the Bose Institute, Kolkata. The philosophy of WAPP is to expose young minds to the excitement in the field of experimental high energy astroparticle physics. The students would have an opportunity to acquire hands-on experience by working with state-of-the-art equipment. They would be using high speed electronics, fast photomultiplier tubes, plastic scintillators etc. to make measurements on the properties of muons, exposing them to the excitement of original research. The students participating in WAPP would be exposed to the modern concepts in these areas which should motivate them to take up a career of research in this frontier area.</p>
+            <hr>       
+        </div>
+        <div class="subpage-text site-text">
+            <table class="table-center" style="width:70%">
+                <colgroup><col width="8%">
+                <col width="76%">
+                <col width="5%">
+                </colgroup>
+                <tbody><tr>
+                    <th><center>Year</center></th>
+                    <th><center>Venue</center></th>
+                    <th><center>Participants</center></th>
+                </tr>
+                
+                <tr>
+                    <td><center>2016</center></td>
+                    <td>Cosmic Ray Laboratory, Ooty, India</td>
+                    <td align="right">44</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2015</center></td>
+                    <td>Bose Institute, Darjeeling, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2014</center></td>
+                    <td>Cosmic Ray Laboratory, Ooty, India</td>
+                    <td align="right">41</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2013</center></td>
+                    <td>Bose Institute, Darjeeling, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2012</center></td>
+                    <td>Cosmic Ray Laboratory, Ooty, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2011</center></td>
+                    <td>Bose Institute, Darjeeling, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2010</center></td>
+                    <td>Cosmic Ray Laboratory, Ooty, India</td>
+                    <td align="right">18</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2009</center></td>
+                    <td>Bose Institute, Darjeeling, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2008</center></td>
+                    <td>Cosmic Ray Laboratory, Ooty, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2007</center></td>
+                    <td>Bose Institute, Darjeeling, India</td>
+                    <td align="right">20</td>
+                </tr>
+                
+                <tr>
+                    <td><center>2006</center></td>
+                    <td>Cosmic Ray Laboratory, Ooty, India</td>
+                    <td align="right">22</td>
+                </tr>
+                
+                <tr>
+                    <td><center></center></td>
+                    <td align="right"><b>Total</b></td>
+                    <td align="right"><b>265</b></td>
+                </tr>
+                
+                </tbody></table>
+                <hr>
+        </div>
+        <div class="subpage-text site-text">
+            <h2 id="phdthesis" style="padding-bottom: 1%; text-align: center;">Ph.D Thesis</h2>
+            <ol>
+                <li><p align="justify">High Angular Resolution Studies using GRAPES-3 Experimental Data<br><span style="color:var(--clr)">- M. Zuberi</span></p></li>
+                <li><p align="justify">A study of high-energy cosmic ray showers by extending the dynamic range of scintillator detectors in GRAPES-3 experiment<br><span style="color:var(--clr)">- A. Chandra</span></p></li>
+                <li><p align="justify">Coronal mass ejections from the sun - propagation and near earth effects<br><span style="color:var(--clr)">- K.P. Arunbabu</span></p></li>
+                <li><p align="justify">An invesitigation of the sun induced diurnal anisotropy in cosmic rays measured with the GRAPES-3 experiment</a><br><span style="color:var(--clr)">- P.K. Mohanty</span></p></li>
+                <li><p align="justify"><span style="color:var(--clr)">- M. Minamino</span><br></p></li>
+                <li><p align="justify"><span style="color:var(--clr)">- A. Oshima</span><br></p></li>
+                <li><p align="justify"><span style="color:var(--clr)">- T. Nonaka</span><br></p></li>
+                <li><p align="justify"><span style="color:var(--clr)">- H. Tanaka</span><br></p></li>
+                <li><p align="justify"><span style="color:var(--clr)">- M. Sasano</span><br></p></li>
+                <li><p align="justify">Muons in extensive air showers<br><span style="color:var(--clr)">- R. Srivatsan</span><br></p></li>
+                <li><p align="justify">Ultra high energy radiation from X-ray binary sources<br><span style="color:var(--clr)">- M.R. Rajeev</span><br></p></li>
+            </ol>
+
+        </div>
+ 
+    </div>
+      <!--footer start-->
+    <div id="footer-space">
+    </div>
+    <script>
+      fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("footer-space").innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching navigation:', error));
+    </script>
+        <!--footer end-->
+         
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script>
+            function fontchange(n){
+                var text = document.getElementById('education-text');
+                var elements = text.querySelectorAll('*:not(h1):not(h2):not(h5)');
+    
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.fontSize = n + "px";
+            }
+            }
+              var buttons = document.querySelector(".buttons");
+              var button = buttons.querySelectorAll(".button");
+        </script> 
+</body>
+</html>

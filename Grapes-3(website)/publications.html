@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+          <div class="buttons bg-dark pt-2 pb-2">
+            <a class="font-inc" onclick="fontchange(12)">-A</a>
+            <a class="font-inc" onclick="fontchange(16)">A</a>
+            <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+          </div>
+          </float>
+          <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+          <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+          <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+          <div id="color-switcher">
+              <form class="color-picker">
+                <fieldset>
+                  <legend class="visually-hidden">Pick a color scheme</legend>
+              
+                  <label for="blue" class="visually-hidden">Blue theme</label>
+                  <input type="radio" id="blue" name="theme">
+              
+                  <label for="green" class="visually-hidden">Green theme</label>
+                  <input type="radio" id="green" name="theme">
+             
+                  <label for="red" class="visually-hidden">Red theme</label>
+                  <input type="radio" id="red" name="theme">
+                </fieldset>
+              </form>
+          </div>
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--Navbar end-->
+    </header>
+<div id="publications-text">
+<div class="subpage-head">
+  <h1>Publications</h1>
+</div>
+<!--Journals starts-->
+<div id="journal-text" class="subpage-text site-text">
+    <h2 style="text-align: center;"><a id="journals">Journals</a></h2>
+		<ol>
+			<!--			
+			<li><p align="justify" style="line-height:1.5"><a href="" target="_blank"></a><br><br><i style="color:#FF8080"></i></p></li>
+			-->
+			<li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/article/10.1007/s10686-023-09898-5" target="_blank">High-Performance and Low-Noise Front-End Electronics for GRAPES-3 Muon Telescope</a><br>K. Ramesh, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, P.K. Mohanty, P.K. Nayak, A. Oshima, L.V. Reddy, M. Zuberi<br><i style="color:#FF8080">Experimental Astronomy, 56, 31–47 (2023)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/18/03/P03046" target="_blank">A GEANT4 based simulation framework for the large area muon telescope of the GRAPES-3 experiment</a><br>F. Varsi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, S. Mishra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, A.K. Pradhan, G.S. Pradhan, M. Rameez, K. Ramesh, L.V. Reddy, S. Saha, R. Sahoo, R. Scaria, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Journal of Instrumentation, Volume 18 (2023) P03046</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1364682623000032?via%3Dihub" target="_blank">Probing solar storms with GRAPES-3 scintillator detectors</a><br>B. Hariharan, M. Chakraborty, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Journal of Atmospheric and Solar–Terrestrial Physics 243 (2023) 106005</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.022009" target="_blank">Validating the improved angular resolution of the GRAPES-3 air shower array by observing the Moon shadow in cosmic rays</a><br>D. Pattanaik,  S. Ahmad, M. Chakraborty, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Phys. Rev. D 106, 022009 (2022)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://link.springer.com/article/10.1007/s10686-020-09671-y" target="_blank">Energy sensitivity of the GRAPES-3 EAS array for primary cosmic ray protons</a><br>B. Hariharan,  S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, Y. Hayashi, S.S.R. Inbanathan, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Experimental Astronomy 50, 185–198 (2020)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://iopscience.iop.org/article/10.1088/1475-7516/2020/07/024" target="_blank">The angular resolution of GRAPES-3 EAS array after improved timing and shower front curvature correction based on age and size</a><br>V.B. Jhansi, S. Ahmad, M. Chakraborty, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Journal of Cosmology and Astroparticle Physics 07(2020)024</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/article/10.1007/s10686-020-09653-0" target="_blank">Simulation of atmospheric pressure dependence on GRAPES-3 particle density</a><br>M. Zuberi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, S. Mahapatra, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, F. Varsi<br><i style="color:#FF8080">Experimental Astronomy 49, 61–71 (2020)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/article/10.1007/s10686-019-09640-0" target="_blank">Modeling of rigidity dependent CORSIKA simulations for GRAPES-3</a><br>B. Hariharan, S.R. Dugad, S.K. Gupta, Y. Hayashi, S.S.R. Inbanathan, P. Jagadeesan, A. Jain, S. Kawakami, P.K. Mohanty, B.S. Rao<br><i style="color:#FF8080">Experimental Astronomy 48, 111–120 (2019)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.105101" target="_blank">Measurement of the Electrical Properties of a Thundercloud Through Muon Imaging by the GRAPES-3 Experiment</a><br>B. Hariharan, A. Chandra, S.R. Dugad, S.K. Gupta, P. Jagadeesan, A. Jain, P.K. Mohanty, S.D. Morris, P.K. Nayak, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, M. Zuberi, Y. Hayashi, S. Kawakami, S. Ahmad, H. Kojima, A. Oshima, S. Shibata, Y. Muraki, K. Tanaka<br><i style="color:#FF8080">Phys. Rev. Lett. 122, 105101 (2019)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.98.022004" target="_blank">Measurement of the radial diffusion coefficient of galactic cosmic rays near the Earth by the GRAPES-3 experiment</a><br>H. Kojima, K.P. Arunbabu, S.R. Dugad, S.K. Gupta, B. Hariharan, P. Jagadeesan, A. Jain, P.K. Mohanty, P.S. Rakshe, K. Ramesh, B.S. Rao, Y. Hayashi, S. Kawakami, T. Nonaka, A. Oshima, S. Shibata, K. Tanaka, M. Tokumaru<br><i style="color:#FF8080">Physical Review D 98, 022004 (2018)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.082001" target="_blank">Was the cosmic ray burst detected by the GRAPES-3 muon telescope on 22 June 2015 caused by a transient weakening of the geomagnetic field or by an interplanetary anisotropy?</a><br>P.K. Mohanty, K.P. Arunbabu, S. Ahmad, T. Aziz, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S.D. Morris, P.K. Nayak, A. Oshima, P.S. Rakshe, K. Ramesh, B.S. Rao, S. Shibata, S. Raha, P. Subramanian, M. Zuberi<br><i style="color:#FF8080">Physical Review D 97, 082001 (2018)</i></p></li>
+			
+            <li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0927650517300683" target="_blank">Dependence of the muon intensity on the atmospheric temperature measured by the GRAPES-3 experiment</a><br>K.P. Arunbabu, S. Ahmad, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, M. Zuberi<br><i style="color:#FF8080">Astroparticle Physics 94 (2017) 22-28</i></p></li>
+			
+            <li><p align="justify" style="line-height:1.5"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.117.171101" target="_blank">Transient Weakening of Earth’s Magnetic Shield Probed by a Cosmic Ray Burst</a><br>P.K. Mohanty, K.P. Arunbabu, T. Aziz, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S.D. Morris, A. Oshima, B.S. Rao, S. Shibata, S. Raha, P. Subramanian<br><i style="color:#FF8080">Phys. Rev. Lett. 117, 171101 (2016)</i>   <br><font color="blue">List of news articles related to this journal    <a href="https://grapes-3.tifr.res.in/publications/misc/Vol1_v3.pdf"><u>Vol-1</u></a>     <a href="https://grapes-3.tifr.res.in/publications/misc/Vol2_v3.pdf"><u>Vol-2</u></a>     <a href="https://grapes-3.tifr.res.in/publications/misc/Vol3_v3.pdf"><u>Vol-3</u></a>     <a href="https://grapes-3.tifr.res.in/publications/misc/Vol4_v3.pdf"><u>Vol-4</u></a>     <a href="https://grapes-3.tifr.res.in/publications/misc/Vol5_v3.pdf"><u>Vol-5</u></a>     <a href="https://grapes-3.tifr.res.in/publications/misc/Vol6_v3.pdf"><u>Vol-6</u></a><br>     <a href="https://grapes-3.tifr.res.in/publications/misc/videos.pdf">List of videos related to this journal</a></font></p></li>
+			
+            <li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0927650516300251" target="_blank">Fast fourier transform to measure pressure coefficient of muons in the GRAPES-3 experiment</a><br>P.K. Mohanty, S. Ahmad, H.M. Antia, K.P. Arunbabu, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata<br><i style="color:#FF8080">Astroparticle Physics 79 (2016) 23-30</i></p></li>
+			
+            <li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0927650515001103" target="_blank">Study of terrestrial γ-ray background in presence of variable radioactivity from rain water</a><br>P.K. Nayak, S.K. Gupta, A. Jain, I. Mazumdar, S. Raha<br><i style="color:#FF8080">Astroparticle Physics 72 (2016) 55-60</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://journals.aps.org/prd/abstract/10.1103/PhysRevD.91.121303" target="_blank">Dependence of cosmic ray intensity on variation  of solar wind velocity measured by the GRAPES-3 experiment for space weather studies</a><br>H. Kojima, H.M. Antia, S.R. Dugad, S.K. Gupta, P. Jagadeesan, A. Jain, P.K. Mohanty, B.S. Rao, Y. Hayashi, S. Kawakami, T. Nonaka, A. Oshima, S. Shibata, K. Tanaka<br><i style="color:#FF8080">Physical Review D 91, 121303(R) (2015)</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.aanda.org/articles/aa/abs/2015/08/aa25115-14/aa25115-14.html" target="_blank">How are Forbush decreases related to interplanetary magnetic field enhancements?</a><br>K.P. Arunbabu, H.M. Antia, S.R. Dugad, S.K. Gupta, Y. Hayashi, S. Kawakami, P.K. Mohanty, A. Oshima, P. Subramanian<br><i style="color:#FF8080">Astronomy &amp; Astrophysics 580, A41 (2015)</i></p></li>
+	
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0927650514000991" target="_blank">Measurement of the radial density gradient of cosmic ray in the heliosphere by the GRAPES-3 experiment</a><br>H. Kojima, H.M. Antia, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesai, A. Jain, S. Kawakami, P.K. Mohanty, T. Nonaka, A. Oshima, B.S. Rao, S. Shibata<br><i style="color:#FF8080">Astroparticle Physics 62 (2015) 21-29</i></p></li>  
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.aanda.org/articles/aa/abs/2013/07/aa20830-12/aa20830-12.html" target="_blank">High-rigidity Forbush decreases: due to CMEs or shocks?</a><br>K.P. Arunbabu, H.M. Antia, S.R. Dugad, S.K. Gupta, Y. Hayashi, S. Kawakami, P.K. Mohanty, T. Nonaka, A. Oshima, P. Subramanian<br><i style="color:#FF8080">Astronomy &amp; Astrophysics, 555, (2013) A139</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://link.springer.com/article/10.1007/s12043-013-0561-0" target="_blank">Solar diurnal anisotropy measured using muons in GRAPES-3 experiment in 2006</a><br>P.K. Mohanty, D. Atri, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, A. Jain, S. Kawakami, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao<br><i style="color:#FF8080">Pramana, 81 (2013) 343-357</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://iopscience.iop.org/article/10.1088/0954-3899/39/2/025201/meta" taget="_blank">Studies of the energy spectrum and composition of the primary cosmic rays at 100-1000 TeV from the GRAPES-3 experiment</a><br>H. Tanaka, S.R. Dugad, S.K. Gupta, A. Jain, P.K. Mohanty, B.S. Rao, K.C. Ravindran, K. Sivaprasad, S.C. Tonwar, Y. Hayashi, N. Ito, S. Kawakami, M. Minamino, T. Nonaka, A. Oshima<br><i style="color:#FF8080">Journal of Physics G: Nuclear and Particle Physics, 39 (2012) 025201</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://scitation.aip.org/content/aip/journal/rsi/83/4/10.1063/1.3698089" target="_blank">Monte Carlo code G3sim for simulation of plastic scintillator detectors with wavelength shifter fiber readout</a><br>P.K. Mohanty, S.R. Dugad, S.K. Gupta<br><i style="color:#FF8080">Review of Scientific Instruments 83 (2012) 043301</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://link.springer.com/article/10.1007/s10686-012-9320-3" target="_blank">Measurement of arrival time of particles in extensive air showers using TDC32</a><br>S.K. Gupta, J. Christiansen, Y. Hayashi, A. Jain, P.K. Mohanty, K.C. Ravindran, B. Satyanarayana<br><i style="color:#FF8080">Experimental Astronomy, DOI 10.1007/s10686-012-9320-3</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0927650509001923" target="_blank">The angular resolution of the GRAPES-3 array from the shadows of the Moon and the Sun</a><br>A. Oshima, S.R. Dugad, U.D. Goswami, S.K. Gupta, Y. Hayashi, N. Ito, A. Iyer, P. Jagadeesan, A. Jain, S. Kawakami, M. Minamino, P.K. Mohanty, S.D. Morris, P.K. Nayak, T. Nonaka, S. Ogio, B.S. Rao, K.C. Ravindran, H. Tanaka, S.C. Tonwar<br><i style="color:#FF8080">Astroparticle Physics, 33 (2010) 97</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0927650508001655" target="_blank">Measurement of some EAS properties using new scintillator detectors developed for the GRAPES-3 experiment</a><br>P.K. Mohanty, S.R. Dugad, U.D. Goswami, S.K. Gupta, Y. Hayashi, A. Iyer, N. Ito, P. Jagadeesan, A. Jain, S. Karthikeyan, S. Kawakami, M. Minamino, S.D. Morris, P.K. Nayak, T. Nonaka, A. Oshima, B.S. Rao, K.C. Ravindran, H. Tanaka, S.C. Tonwar<br><i style="color:#FF8080">Astroparticle Physics, 31 (2009) 24</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S092056320900663X" target="_blank">The current status of the GRAPES-3 extensive air shower experiment</a><br>S.K. Gupta, H.M. Antia, S.R. Dugad, U.D. Goswami, Y. Hayashi, A. Iyer, N. Ito, P. Jagadeesan, A. Jain, S. Karthikeyan, S. Kawakami, M. Minamino, P.K. Mohanty, S.D. Morris, P.K. Nayak, T. Nonaka, A. Oshima, B.S. Rao, K.C. Ravindran, H. Tanaka, S.C. Tonwar<br><i style="color:#FF8080">Nuclear Physics B - Proceedings Supplements, 196 (2009) 153M</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.aanda.org/articles/aa/abs/2009/06/aa09551-08/aa09551-08.html" target="_blank">Forbush decreases and turbulence levels at coronal mass ejection fronts</a><br>P. Subramanian, H.M. Antia, S.R. Dugad, U.D. Goswami, S.K. Gupta, Y. Hayashi, N. Ito, S. Kawakami, H. Kojima, P.K. Mohanty, P.K. Nayak, T. Nonaka, A. Oshima, K. Sivaprasad, H. Tanaka, S.C. Tonwar<br><i style="color:#FF8080">Astronomy &amp; Astrophysics, 494, (2008) 1107-1118</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0920563207008110" target="_blank">Study on Nuclear Composition of Cosmic Rays around the Knee utilizing Muon multiplicity with GRAPES-3 experiment at Ooty</a><br>H. Tanaka, S.K. Gupta, Y. Hayashi, N.Ito, A. Jain, S. Karthikeyan, S. Kawakami, T. Matsuyama, P.K. Mohanty, S.D. Morris, T. Nonaka, A. Oshima, B.S. Rao, K.C. Ravindran, M. Sasano, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Nuclear Physics B - Proceedings Supplements, 280 (2008) 175</i></p></li>
+
+			<li> <p align="justify" style="line-height:1.5"><a href="http://journals.aps.org/prd/abstract/10.1103/PhysRevD.74.052003" target="_blank">Did the 28 October 2003 solar flare accelerate protons to * 20 GeV? A study of the subsequent Forbush decrease with the GRAPES-3 tracking muon telescope</a><br>T. Nonaka, Y. Hayashi, N. Ito, S. Kawakami, T. Matsuyama, A. Oshima, H. Tanaka, T. Yoshikoshi, S.K. Gupta, A. Jain, S. Karthikeyan, P.K. Mohanty, S.D. Morris, B.S. Rao, K. C. Ravindran, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar, K. Viswanathan, H. Kojima<br><i style="color:#FF8080">Physical Review D 74, (2006) 052003</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0920563205009746" target="_blank">A new study on the energy spectrum and composition of primary cosmic rays at energies 10<sup>14</sup> - 10<sup>16</sup> eV using the GRAPES-3 array at Ooty</a><br>S.C. Tonwar, S.K. Gupta, D.K. Mohanty, P.K. Mohanty, K. Sivaprasad, B.V. Sreekantan, Y. Hayashi, N. Ito, S. Kawakami, T. Nonaka, H. Tanaka, T. Yoshikoshi<br><i style="color:#FF8080">Nuclear Physics B - Proceedings Supplements, 151 (2006) 477</i></p></li>
+ 
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S0168900205007643" target="_blank">A large area muon tracking detector for ultra-high energy cosmic ray astrophysics - the GRAPES-3 experiment</a><br>Y. Hayashi, Y. Aikawa, N.V. Gopalakrishnan, S.K. Gupta, N. Ikeda, N. Ito, A. Jain, A.V. John, S. Karthikeyan, S. Kawakami, H. Kojima, T. Matsuyama, D.K. Mohanty, P.K. Mohanty, S.D. Morris, T. Nonaka, A. Oshima, B.S. Rao, K.C. Ravindran, M. Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Nuclear Instruments and Methods in Physics Research A, 545 (2005) 643-657</i></p></li> 
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.sciencedirect.com/science/article/pii/S016890020402426X" target="_blank">GRAPES-3 A high-density air shower array for studies on the structure in the cosmic-ray energy spectrum near the knee</a><br>S.K. Gupta, Y. Aikawa, N.V. Gopalakrishnan, Y. Hayashi, N. Ikeda, N. Ito, A. Jain, A.V. John, S. Karthikeyan, S. Kawakami, T. Matsuyama, D.K. Mohanty, P.K. Mohanty, S.D. Morris, T. Nonaka, A. Oshima, B.S. Rao, K.C. Ravindran, M. Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Nuclear Instruments and Methods in Physics Research A, 540 (2005) 311-323</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://www.worldscientific.com/doi/abs/10.1142/S0217751X05030296" target="_blank">A new study on the energy spectrum and composition of primary cosmic ray flux at energies ~ 10<sup>14</sup> - 10<sup>16</sup> eV using the GRAPES-3 array at Ooty</a><br>S.C. Tonwar, S.K. Gupta, D.K. Mohanty, P.K. Mohanty, K. Sivaprasad, B.V. Sreekantan, Y. Hayashi, N. Ito, S. Kawakami, T. Nonaka, H. Tanaka, T. Yoshikoshi<br><i style="color:#FF8080">International Journal of Modern Physics A, 20 (2005) 6852</i></p></li>
+
+			<li><p align="justify" style="line-height:1.5"><a href="http://link.springer.com/article/10.1007%2FBF02898615" target="_blank">A high-performance, low-cost, leading edge discriminator</a><br>S.K. Gupta, Y. Hayashi, A. Jain, S. Karthikeyan, S. Kawakami, K.C. Ravindran, S.C. Tonwar<br><i style="color:#FF8080">Pramana, 65 (2005) 273-283</i></p></li>    
+			</ol>
+		
+	
+
+<h4>Journal Publications (By others with GRAPES-3 data)</h4>
+	
+		<ol>
+			<li><p align="justify" style="line-height:1.5"><a href="http://link.springer.com/article/10.1007/s11207-006-0083-8" target="_blank">Cosmic Ray Anisotropies Around the Forbush Decrease of April 11 2001</a><br>R.P. Kane<br><i style="color:#FF8080">Solar Physics, 234 (2006) 353-362</i></p></li>
+			</ol>
+      <hr>
+</div>
+
+<!--Journals ends-->
+<!--Conference Proceedings Starts-->
+<div id="cp-text" class="subpage-text site-text">
+<h2 style="text-align: center;"><a id="conference">Conference Proceedings</a></h2>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button id="icrc2023" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          38th International Cosmic Ray Conference
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>38th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/403/" target="_blank">Seasonal variation of thuderstorm-induced muon events observed at GRAPES-3</a><br>P.K. Nayak, S.R. Dugad, S.K. Gupta, B. Hariharan, P. Jagadeesan, A. Jain, P.K. Mohanty, M. Rameez, K. Ramesh, M. Zuberi, Y. Hayashi, S. Kawakami, H. Kojima, A. Oshima, S. Shibata, Y. Muraki, T. Nonaka<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)403</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/404/" target="_blank">Contemplating the observed relationship between the global electric circuit and GRAPES-3 thunderstorm-induced muon events</a><br>P.K. Nayak, S.R. Dugad, S.K. Gupta, B. Hariharan, P. Jagadeesan, A. Jain, P.K. Mohanty, M. Rameez, K. Ramesh, M. Zuberi, Y. Hayashi, S. Kawakami, H. Kojima, A. Oshima, S. Shibata, Y. Muraki, T. Nonaka<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)404</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/504/" target="_blank">A study of the angular resolution of GRAPES-3 EAS array</a><br>V.B. Jhansi, S. Ahmad, M. Chakraborty, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Raksh, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)504</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/513/" target="_blank">Small-scale anisotropy in the cosmic ray flux observed by GRAPES-3 at TeV energies</a><br>M. Chakraborty, S. Ahmad, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, K. Tanaka,  F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)513</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/514/" target="_blank">A new approach to determine muon multiplicity at the GRAPES-3 experiment</a><br>R. Scaria, M. Chakraborty, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, G.S. Pradhan, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)514</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/520/" target="_blank">Cosmic ray proton energy spectrum below the Knee observed by the GRAPES-3 experiment</a><br>F. Varsi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, M. Rameez, K. Ramesh, L.V. Reddy, S. Saha, R. Sahoo, R. Scaria, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)520</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/522/" target="_blank">Machine learning model for separation of muons from punch-through hadrons in EAS at GRAPES-3 experiment</a><br>D. Bezboruah, M. Chakraborty, M.M. Devi, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, A. Sarker, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)522</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/530/" target="_blank">Observation of the atmospheric wave created by Hunga Tonga-Hunga Ha’apai volcano eruption using GRAPES-3 detectors</a><br>B. Hariharan, M. Chakraborty, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)530</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/545/" target="_blank">A Simulation Study of the GRAPES-3 Sensitivity to Primary Cosmic Ray Composition with the Expanded Muon Telescope</a><br>A. Pathak, B. Parida, P.K. Mohanty, M. Chakraborty, S.R. Dugad, U.D. Gowswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)545</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/922/" target="_blank">Search for point sources of gamma-rays above 50 TeV with the GRAPES-3 experiment</a><br>D. Pattanaik, S. Ahmed, M. Chakraborty, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)922</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/934/" target="_blank">Acceptance of the GRAPES-3 experiment towards gamma-ray showers</a><br>B.P. Pant, M. Chakraborty, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, 𝑓 P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)934</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/1313/" target="_blank">The Akeno Muon Observation: A Joint Research for Near Earth Space by Japan-India Collaboration</a><br>A. Oshima, K. Tanaka, H. Kojima, S. Shibata, H. Takamaru, T. Koi, K. Yamazaki, T. Tabata, S. Kawakami, Y. Hayashi, T. Nakamura, T. Nonaka, S. Ogawa, S.K. Gupta, P.K. Mohanty, B. Hariharan,  A. Jain<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)1313</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/1339/" target="_blank">Solar wind velocity dependence of the flow of galactic cosmic rays perpendicular to the ecliptic plane on the polarity of the interplanetary magnetic field</a><br>H. Kojima, S. Shibata, H. Takamaru, A. Oshima, T. Koi, K. Yamazaki, T. Tabata, S. Kawakami, Y. Hayashi, K. Tanaka, T. Nakamura, T. Nonaka, S.K. Gupta, P.K. Mohanty, K.P. Arunbabu, M. Chakraborty, S.R. Dugad, B. Hariharan, P. Jagadeesan, A. Jain, S. Mahapatra, P.K. Nayak, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, P. Subramanian, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)1339</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/1340/" target="_blank">Dependence of solar diurnal variation on solar wind speed</a><br>T. Koi, H. Kojima, S. Shibata, H. Takamaru, A. Oshima, K. Yamazaki, T. Tabata, S. Kawakami, Y. Hayashi, K. Tanaka, T. Nakamura, T. Nonaka, S.K. Gupta, P.K. Mohanty, K.P. Arunbabu, M. Chakraborty, S.R. Dugad, B. Hariharan, P. Jagadeesan, A. Jain, S. Mahapatra, P.K. Nayak, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, P. Subramanian, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)1340</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/1349/" target="_blank">Study of modulation cycles of cosmic ray diurnal anisotropy variation using 22 years of GRAPES-3 muon data</a><br>M. Zuberi, K.P. Arunbabu, S. Ahmad, M. Chakraborty, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, P. Subramanian, F. Varsi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)1349</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/1354/" target="_blank">The potential role of GRAPES-3 experiment in space weather forecasting</a><br>B. Hariharan, M. Chakraborty, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)1354</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/444/1361/" target="_blank">Muon Flux Measurements and their angular distribution with the new muon telescope at GRAPES-3 experiment</a><br>R. Kataria, B. Parida, P.K. Mohanty, M. Chakraborty, S.R. Dugad, U.D. Gowswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, R. Moharana, Y. Muraki, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2023)1361</i></p></li>
+              </ol>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button id="isvhecri2022" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ISVHECRI 2022
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>ISVHECRI 2022</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://scipost.org/SciPostPhysProc.13.021" target="_blank">Highlights of the results from the GRAPES-3 experiment</a><br>B. Hariharan, S. Ahmad, M. Chakraborty, S.R. Dugad, U.D. Goswami, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, B.P. Pant, M. Rameez, K. Ramesh, L.V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">SciPost Phys. Proc. 13, 021 (2023)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://scipost.org/SciPostPhysProc.13.031" target="_blank">Updated results on the cosmic ray energy spectrum and composition from the GRAPES-3 experiment</a><br>F. Varsi, S. Ahmad, M. Chakraborty, A. Chandra, S. R. Dugad, U. D. Goswami, S. K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain , P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P. K. Mohanty, R. Moharana, Y. Muraki, P. K. Nayak, T. Nonaka, A. Oshima, B. P. Pant, D. Pattanaik, G. Pradhan, M. Rameez, K. Ramesh, L. V. Reddy, R. Sahoo, R. Scaria, S. Shibata, K. Tanaka, M. Zuberi<br><i style="color:#FF8080">SciPost Phys. Proc. 13, 031 (2023)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://scipost.org/SciPostPhysProc.13.033" target="_blank">Update on the angular resolution of GRAPES-3 experiment based on Moon shadow analysis</a><br>D. Pattanaik, S. Ahmad, M. Chakraborty, S. R. Dugad, U. D. Goswami, S. K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P. K. Mohanty, R. Moharana, Y. Muraki, P. K. Nayak, T. Nonaka, A. Oshima, B. P. Pant, M. Rameez, K. Ramesh, L. V. Reddy, S. Shibata, F. Varsi, M. Zuberi<br><i style="color:#FF8080">SciPost Phys. Proc. 13, 033 (2023)</i></p></li>
+              </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button id="dlcp2022" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          DLCP 2022
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>DLCP 2022</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/429/001/" target="_blank">A machine learning approach to identify the air shower cores for the GRAPES-3 experiment</a><br>M. Chakraborty, S. Ahmad, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, S. Paul, B.P. Pant, D. Pattanaik, G.S. Pradhan, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(DLCP2022)001</i></p></li>
+              </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button id="icrc37" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          37th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>37th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/003" target="_blank">Highlights from the GRAPES-3 experiment</a><br>P.K. Mohanty, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)003</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/378" target="_blank">The azimuthal distribution of thunderstorm events recorded by the GRAPES-3 experiment</a><br>B. Hariharan, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)378</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/379" target="_blank">Measurement of large angle muon flux in GRAPES-3 experiment using triggerless DAQ system</a><br>B. Hariharan, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)379</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/257" target="_blank">An Advanced Triggerless Data Acquisition System for GRAPES-3 Muon Detector</a><br>A. Jain, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)257</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/388" target="_blank">Cosmic ray energy spectrum and composition measurements from the GRAPES-3 experiment: Latest results</a><br>F. Varsi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)388</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/389" target="_blank">A study of the Moon shadow by using GRAPES-3 muon telescope</a><br>M. Zuberi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)389</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/390" target="_blank">Zenith angle dependence of pressure effect in GRAPES-3 muon telescope</a><br>M. Zuberi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)390</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/391" target="_blank">Measurement of the improved angular resolution of GRAPES-3 EAS array by the observation of the Moon shadow</a><br>D. Pattanaik, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)391</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/870" target="_blank">Search for gamma rays above 30 TeV from the Crab Nebula with the GRAPES-3 experiment</a><br>D. Pattanaik, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)870</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/393" target="_blank">Large-scale cosmic ray anisotropy measured by the GRAPES-3 experiment</a><br>M. Chakraborty, S. Ahmad, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)393</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/394" target="_blank">Vetoing the high energy showers in the GRAPES-3 experiment whose cores lie outside the array</a><br>M. Chakraborty, S. Ahmad, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)394</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/396" target="_blank">An extensive study for correcting the nonlinear particle density measured by GRAPES-3 scintillator detectors</a><br>A. Chandra, S. Ahmad, M. Chakraborty, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)396</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/871" target="_blank">Characterizing the isotropic diffuse gamma-ray flux (10-300 TeV) by the GRAPES-3 experiment</a><br>B.P. Pant, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)871</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/395/1303" target="_blank">High-resolution two-dimensional map of the solar-time anisotropy obtained by the GRAPES-3 large-area muon telescope</a><br>H. Kojima, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, U.D. Goswami, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, S. Kawakami, S. Mahapatra, P.K. Mohanty, R. Moharana, Y. Muraki, P.K. Nayak, T. Nonaka, A. Oshima, B.P. Pant, D. Pattanaik, G.S. Pradhan, P.S. Rakshe, M. Rameez, K. Ramesh, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, J. Soni, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2021)1303</i></p></li>
+              </ol>                                                                               
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button id="daehep2020" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          DAE-HEP Symposium 2020
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>DAE-HEP Symposium 2020</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/chapter/10.1007/978-981-19-2354-8_120" target="_blank">A detailed investigation of thunderstorm events recorded in GRAPES-3 experiment</a><br>B. Hariharan, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, B. Pant, D. Pattanaik, G.S Pradhan, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">DAE-HEP Symposium 2020, Springer Proceedings in Physics, vol 277, pp 661–665</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/chapter/10.1007/978-981-19-2354-8_118" target="_blank">Latest results of cosmic ray energy spectrum and composition measurements from GRAPES-3 experiment</a><br>F. Varsi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, B. Pant, D. Pattanaik, G.S Pradhan, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, K. Tanaka, M. Zuberi<br><i style="color:#FF8080">DAE-HEP Symposium 2020, Springer Proceedings in Physics, vol 277, pp 649–654</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/chapter/10.1007/978-981-19-2354-8_119" target="_blank">Investigation of muon puzzle with GRAPES-3 experiment</a><br>G.S. Pradhan, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, B. Pant, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, R. Sahoo, R. Scaria, S. Shibata, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">DAE-HEP Symposium 2020, Springer Proceedings in Physics, vol 277, pp 655–659</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://link.springer.com/chapter/10.1007/978-981-19-2354-8_127" target="_blank">Investigation of K/π ratio with accelerator and cosmic ray data</a><br>R. Scaria, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, R. Moharana, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, B. Pant, D. Pattanaik, G.S Pradhan, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, R. Sahoo, S. Shibata, K. Tanaka, F. Varsi, M. Zuberi<br><i style="color:#FF8080">DAE-HEP Symposium 2020, Springer Proceedings in Physics, vol 277, pp 703–707</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button id="icrc36" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          36th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>36th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/185" target="_blank">Measurement of the electrical properties of a thundercloud through muon imaging by the GRAPES-3 experiment</a><br>B. Hariharan, S. Ahmad, A. Chandra, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, K. Tanaka, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)185</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/186" target="_blank">Dependence of hadronic interaction models in atmospheric electric field simulations for GRAPES-3</a><br>B. Hariharan, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, Y. Hayashi, S.S.R. Inbanathan, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Sharma, S. Shibata, K. Tanaka, F. Warsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)186</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/216" target="_blank">Non-linearity correction of PMT response on the observed particle densities in GRAPES-3</a><br>A. Chandra, S. Ahmad, M. Chakraborty, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, S.S.R. Inbanathan, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, F. Warsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)216</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/354" target="_blank">Observation of cosmic ray anisotropy with GRAPES-3 Experiment</a><br>P.K. Mohanty, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, S.D. Morris, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, F. Warsi, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)354</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/449" target="_blank">Energy spectrum and composition measurements of cosmic rays from GRAPES-3 experiment</a><br>F. Varsi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, S.S.R. Inbanathan, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Sharma, S. Shibata, K. Tanaka, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)449</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/457" target="_blank">A size and age dependence study of shower front curvature with GRAPES-3 array</a><br>V.B. Jhansi, S. Ahmad, A. Chandra, S.K. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)457</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/502" target="_blank">Simulation of atmospheric pressure effects on particle densities measured by GRAPES-3</a><br>M. Zuberi, S. Ahmad, M. Chakraborty, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, P. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S. Mahapatra, P.K. Mohanty, S.D. Morris, Y. Muraki, P.K. Nayak, A. Oshima, D. Pattanaik, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Sharma, S. Shibata, K. Tanaka, F. Varsi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)502</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/1151" target="_blank">Correlation between cosmic ray intensity variations observed by the large acceptance GRAPES-3 muon telescope and interplanetary magnetic field</a><br>H. Kojima, S. Shibata, A. Oshima, S. Kawakami, Y. Hayashi, I. Morishita, T. Nakamura, T. Nonaka, S. Ogio, H. Takamaru, K. Tanaka, N. Ito, T. Matsuyama, K. Yamazaki, M. Tokumaru, S.K. Gupta, S. R. Dugad, B. Hariharan, P. Jagadeesan, A. Jain, V.B. Jhansi, P. K. Mohanty, S. D. Morris, P. K. Nayak, P. S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, M. Zuberi, S. Ahmad, A. Chandra, P. Subramanian<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)1151</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/358/1176" target="_blank">A fast and efficient technique to simulate the effects of geomagnetic storms recorded by GRAPES-3 in real-time</a><br>M. Zuberi, S. Ahmad, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2019)1176</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeven">
+        <button id="vci15" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          15th Vienna Conference on Instrumentation
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>15th Vienna Conference on Instrumentation</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://grapes-3.tifr.res.in/publications.html" target="_blank">GRAPES-3 Experimental System</a><br><b>Presented by A. Jain</b><br>A. Jain, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, P. Jagadeesan, P.K. Mohanty, S.D. Morris, P.K. Nayak, P.S. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, M. Zuberi, Y. Hayashi, S. Kawakami, S. Ahmad, H. Kojima, A. Oshima, S. Shibata<br><i style="color:#FF8080"><a href="https://doi.org/10.1016/j.nima.2019.04.053" target="_blank">Nuclear Instruments and Methods in Physics Research A, 053 (2019)</a></i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button id="ecrc26" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          26th Extended European Cosmic Ray Symposium
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>26th Extended European Cosmic Ray Symposium</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://grapes-3.tifr.res.in/publications/conference/Mohanty_2019_J._Phys.__Conf._Ser._1181_012036.pdf" target="_blank">Observation of cosmic ray anisotropy with GRAPES-3 Experiment</a><br><b>Presented by P.K. Mohanty</b><br>P.K. Mohanty, S. Ahmad, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S.D. Morris, P.K. Nayak, A. Oshima, P. Rakshe, K. Ramesh, B.S. Rao, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080"><a href="https://iopscience.iop.org/article/10.1088/1742-6596/1181/1/012036" target="_blank">Journal of Physics: Conference Series, Volume 1181, conference 1</a></i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingNine">
+        <button id="icrc35" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          35th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>35th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/092" target="_blank">Transient weakening of geomagnetic shield probed by GRAPES-3 experiment</a><br><b>Presented by P.K. Mohanty</b><br>P.K. Mohanty, K.P. Arunbabu, T. Aziz, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S.D. Morris, A. Oshima, B.S. Rao, S. Shibata, S. Raha, P. Subramanian<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)092</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/357" target="_blank">Long-term correction of GRAPES-3 muon telescope efficiency</a><br><b>Presented by P.K. Mohanty</b><br>P.K. Mohanty, S. Ahmad, K.P. Arunbabu, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata, P. Subramanian, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)357</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/481" target="_blank">Effects of atmospheric electric field on muon intensity observed in GRAPES-3 experiment</a><br><b>Presented by B. Hariharan</b><br>B. Hariharan, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, P.K. Mohanty, P.K. Nayak, B.S. Rao<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)481</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/305" target="_blank">CORSIKA modification for electric field simulations on pions, kaons and muons</a><br><b>Presented by B. Hariharan</b><br>B. Hariharan, S.R. Dugad, S.K. Gupta, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, P.K. Mohanty, B.S. Rao<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)305</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/011" target="_blank">Diffusion of cosmic rays in heliosphere, observations from GRAPES-3</a><br><b>Presented by K.P. Arunbabu</b><br>K.P. Arunbabu, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, S. Shibata, P. Subramanian<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)011</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/304" target="_blank">Atmospheric temperature dependence of muon intensity measured by the GRAPES-3 experiment</a><br><b>Presented by K.P. Arunbabu</b><br>K.P. Arunbabu, S. Ahmad, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata, K. Tanaka, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)304</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/479" target="_blank">Extending the range of particle densities observed by GRAPES-3</a><br><b>Presented by A. Chandra</b><br>A. Chandra, S. Ahmad, K.P. Arunbabu, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)479</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/302" target="_blank">Dependence of the GRAPES-3 EAS trigger rate and particle density on atmospheric pressure and temperature</a><br><b>Presented by M. Zuberi</b><br>M. Zuberi, S. Ahmad, K.P. Arunbabu, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, V.B. Jhansi, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)302</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/354" target="_blank">Precision measurement of arrival times in an EAS by GRAPES-3 experiment</a><br><b>Presented by V.B. Jhansi</b><br>V.B. Jhansi, S. Ahmad, K.P. Arunbabu, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)354</i></p></li>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/301/356" target="_blank">Measuring the hourly gain of the scintillator detectors from EAS data</a><br><b>Presented by V.B. Jhansi</b><br>V.B. Jhansi, S. Ahmad, K.P. Arunbabu, A. Chandra, S.R. Dugad, S.K. Gupta, B. Hariharan, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, P.K. Mohanty, S.D. Morris, P.K. Nayak, A. Oshima, B.S. Rao, L.V. Reddy, S. Shibata, M. Zuberi<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2017)356</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTen">
+        <button id="icrc34" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          34th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>34th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/042" target="_blank">Measurements of solar diurnal ansiotropy with GRAPES-3 experiment</a><br><b>Presented by P.K. Mohanty</b><br>P.K. Mohanty, H.M. Antia, K.P. Arunbabu, S.R. Dugad, S.K. Gupta, B. Hari Haran, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S.D. Morris, P.K. Nayak, T. Nonaka, A. Oshima, B.S. Rao, S. Shibata, P. Subramanian, K. Tanaka<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)042</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/045" target="_blank">A new method for determining atmospheric pressure coefficient by using fast Fourier transform for muons in the GRAPES-3 experiment</a><br><b>Presented by P.K. Mohanty</b><br>P.K. Mohanty, H.M. Antia, K.P. Arunbabu, S.R. Dugad, S.K. Gupta, B. Hari Haran, Y. Hayashi, P. Jagadeesan, A. Jain, S. Kawakami, H. Kojima, S.D. Morris, P.K. Nayak, T. Nonaka, A. Oshima, B.S. Rao, S. Shibata, P. Subramanian, K. Tanaka<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)045</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/448" target="_blank">CORSIKA modification for rigidity dependent primary selection based on Geomagnetic cutoff rigidity for GRAPES-3 simulations</a><br><b>Presented by B. Hari Haran</b><br>B. Hari Haran, S. Ahmad, A. Chandra, S.R. Dugad, S.K. Gupta, Y. Hayashi, A. Jain, S. Kawakami, P.K. Mohanty, A. Oshima, P. Jagadeesan, B.S. Rao<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)448</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/235" target="_blank">Energy spectrum of the primary cosmic rays in the range 10 GeV-10 TeV</a><br><b>Presented by B. Hari Haran</b><br>A. Chandra, S. Ahmad, S.R. Dugad, S.K. Gupta, B. Hari Haran, A. Jain, P.K. Mohanty, S.D. Morris, P.K. Nayak, P. Jagadeesan, B.S. Rao<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)235</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/043" target="_blank">Relation of Forbush decrease with interplanetary magnetic fields</a><br><b>Presented by K.P. Arunbabu</b><br>K.P. Arunbabu, H.M. Antia, S.R. Dugad, S.K. Gupta, Y. Hayashi, S. Kawakami, P.K. Mohanty, A. Oshima, P. Subramanian<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)043</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/044" target="_blank">Forbush decrease precursors observed using GRAPES-3</a><br><b>Presented by K.P. Arunbabu</b><br>K.P. Arunbabu, H.M. Antia, S.R. Dugad, S.K. Gupta, Y. Hayashi, S. Kawakami, P.K. Mohanty, A. Oshima, P. Subramanian<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)044</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/061" target="_blank">An estimation of the diffusion coefficient of galactic cosmic rays in the heliosphere near the Earth</a><br><b>Presented by A. Oshima</b><br>H. Kojima, S. Shibata, A. Oshima, Y. Hayashi, S. Kawakami, I. Morishita, H. Nakamura, T. Nonaka, S. Ogio, H. Takamaru, K. Tanaka, N. Ito, T. Matsuyama, K. Yamazaki, M. Tokumaru, S.K. Gupta, H.M. Antia, S.R. Dugad, P.K. Mohanty, A. Jain, B.S. Rao<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)061</i></p></li>
+                   <li><p align="justify" style="line-height:1.5"><a href="https://pos.sissa.it/236/062" target="_blank">Rigidity dependence of the intensity variations of galactic cosmic rays</a><br><b>Presented by H. Kojima</b><br>H. Kojima, S. Shibata, A. Oshima, Y. Hayashi, S. Kawakami, I. Morishita, H. Nakamura, T. Nonaka, S. Ogio, H. Takamaru, K. Tanaka, N. Ito, T. Matsuyama, K. Yamazaki, M. Tokumaru, S.K. Gupta, H.M. Antia, S.R. Dugad, P.K. Mohanty, A. Jain, B.S. Rao<br><i style="color:#FF8080">Proceedings of Science PoS(ICRC2015)062</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEleven">
+        <button id="isvhecr2012" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+          XVII International Symposium on Very High Energy Cosmic Ray Interactions
+        </button>
+      </h2>
+      <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>XVII International Symposium on Very High Energy Cosmic Ray Interactions</a></h3>
+                  <li><p align="justify" style="line-height:1.5"><a href="http://www.epj-conferences.org/articles/epjconf/abs/2013/13/epjconf_isvh2012_04005/epjconf_isvh2012_04005.html" target="_blank">Recent results from the GRAPES-3 experiment</a><br>S.K. Gupta<br><i style="color:#FF8080">EPJ Web of Conferences 52, 04005 (2013)</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwelve">
+        <button id="icrc30" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+          30th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>30th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5">Current status of the expanded GRAPES collaboration at Ooty in India<br>S.K. Gupta, H.M. Antia, A. Iyer, P. Jagadeesan, A. Jain, S. Karthikeyan, P.K. Manoharan, P.K. Mohanty, P.K. Nayak, B.S. Rao, K.C. Ravindran, H. Tanaka, S.C. Tonwar, K. Hayashi, Y. Hayashi, N. Ito, S. Kawakami, T. Matsuyama, M. Minamino, T. Nonaka, S. Ogio, T. Okuda, A. Oshima, N. Shimizu, T. Yoshikoshi, Badruddin, R. Hasan, S. Ahmad, A.P. Mishra, P.K. Shrivastava, R. Koul, G.N. Shah, T.A. Mir, S. Mufti, S. Raha, S. Ghosh, P. Joarder, S. Saha, K. Boruah, P. Datta, P.K. Boruah, A.G. Boruah, R. Baishya, J. Saikia, D. Banerjee, P. Subramanian, A. Bhadra, S. Kumar, R. Agarwal, S.K. Dubey, P. Bhattacharjee<br><i style="color:#FF8080">(HE 1.5), Proceedings of 30th International Conference on Cosmic Ray Physics, (HE 1.5), Paper No.1058</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Influence of hadronic interaction models on the muon multiplicity distribution of air showers observed with the GRAPES-3 experiment at Ooty<br>H. Tanaka, S.K.Gupta, K. Hayashi, Y. Hayashi, N. Ito, A. Iyer, P. Jagadeesan, A. Jain, S. Karthikeyan, S. Kawakami, H. Kojima, T. Matsuyama, M. Minamino, P.K. Mohanty, P.K. Nayak, S.D. Morris, T. Nonaka, S. Ogio, T. Okuda, A. Oshima, B.S. Rao, K.C. Ravindran, M. Sasano, N. Shimizu, K. Sivaprasad, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of 30th International Conference on Cosmic Ray Physics, (HE 3.1), Paper No. 1233</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Angular resolution of GRAPES-3 array obtained from the shadow of Moon and Sun in extensive air showers<br>A. Oshima et al.<br><i style="color:#FF8080">Proceedings of 30th International Conference on Cosmic Ray Physics, (OG 2.7), Paper No. 1050</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Search for point sources of gamma rays using GRAPES-3 experiments<br>A. Oshima et al.<br><i style="color:#FF8080">Proceedings of 30th International Conference on Cosmic Ray Physics, (OG 2.2), Paper No. 1050</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Nuclear composition of primary cosmic rays around the knee region observed with GRAPES-3<br>H. Tanaka, S.K. Gupta, K. Hayashi, Y. Hayashi, N. Ito, A. Iyer, P. Jagadeesan, A. Jain, S. Karthikeyan, S. Kawakami, H. Kojima, T. Matsuyama, M. Minamino, P.K. Mohanty, P.K. Nayak, S.D. Morris, T. Nonaka, S. Ogio, T. Okuda, A. Oshima, B.S. Rao, K.C. Ravindran, M. Sasano, N. Shimizu, K. Sivaprasad, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of 30th International Conference on Cosmic Ray Physics, (HE 1.1.A), Paper No.1235</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">A Solar Activity Dependence of A Solar Wind Effect on Cosmic Ray<br>H. Kojima et al.<br><i style="color:#FF8080">Proceedings of 30th International Conference on Cosmic Ray Physics, (SH 3.2), Paper No. 1265</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">A Solar Activity Dependence of A Solar Wind Effect on Cosmic Ray Intensity Variations<br>H. Kojima et al.<br><i style="color:#FF8080">Proceedings of 30th International Conference on Cosmic Ray Physics, (SH 3.2), Paper No. 1270</i></p></li>
+              </ol>
+  
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThirteen">
+        <button id="icrc29" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+          29th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a id="icrc29">29th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5">Short Term Variations of Galactic Cosmic Rays Observed with GRAPES-3 Muon Telescopes<br>T. Nonaka, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, A.V. John, S. Karthikeyan, S. Kawakami, H. Kojima, K. Matsumoto, Y. Matsumoto, T. Matsuyama, D.K. Mohanty, P.K. Mohanty, S.D. Morris, T. Okuda, A. Oshima, B.S. Rao, K.C. Ravindran, M.Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan, T. Yoshiyoshi<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference, 1, 359-362 (2005)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Simultaneous Detection of the Loss-Cone Anisotropy with Ooty and Akeno Muon Telescopes<br>T. Nonaka, S.K. Gupta, Y. Hayashi, N. Hayashida, K. Honda, N. Ito, A. Jain, A.V. John, S. Karthikeyan, S. Kawakami, H. Kojima, K. Matsumoto, Y. Matsumoto, T. Matsuyama, D.K. Mohanty, P.K. Mohanty, S.D. Morris, K. Munakata, T. Okuda, A. Oshima, B.S. Rao, K.C. Ravindran, K. Sivaprasad, B.V. Sreekantan, K. Takizawa, H. Tanaka, S.C. Tonwar, K. Viswanathan, T. Yoshiyoshi<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference, 1, 363-366 (2005)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">A study of sidereal anisotropy of Cosmic rays with GRAPES-3 Muon Telescopes<br>H. Kojima, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, A.V. John, S. Karthikeyan, S.Kawakami, K. Matsumoto, Y. Matsumoto, T. Matsuyama, D.K.Mohanty, P.K.Mohanty, S.D. Morris, T. Nonaka, T. Okuda, A. Oshima, B.S. Rao, K.C. Ravindran, M. Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference, 2, 81-84 (2005)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Tests of PMT uniformity for the GRAPES-3 experiment<br>A. Oshima, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, S. Karthikeyan, S. Kawakami, H. Kojima, T. Matsuyama, P.K Mohanty, T. Nonaka, K.C. Ravindran, H. Tanaka, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference, 5, 335-338 (2005)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Angular Resolution of the GRAPES-3 EAS Array for UHE Gamma-Ray Astronomy<br>P.K. Mohanty, S.K. Gupta, Y. Aikawa, N.V. Gopalakrishnan, Y. Hayashi, N. Ito, A. Iyer, A. Jain, P. Jagadeesan, A.V. John, S. Karthikeyan, S. Kawakami, T. Matsuyama, D.K. Mohanty, S.D. Morris, T. Nonaka, A. Oshima, B.S. Rao, K.C. Ravindran, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference, 6, 21-24 (2005)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">A detailed study on nuclear composition of primary cosmic rays around the knee with GRAPES-3<br>H. Tanaka, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, A.V. John, S. Karthikeyan, S. Kawakami, H. Kojima, K. Matsumoto, Y. Matsumoto, T. Matsuyama, D.K. Mohanty, P.K. Mohanty, S.D. Morris, T. Nonaka, T. Okuda, A. Oshima, B.S. Rao, K.C. Ravindran, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference, 6, 209-212 (2005)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">GRAPES-3 Experiment<br>Y. Hayashi on behalf of GRAPES Collaboration<br><i style="color:#FF8080">Proceedings of the 29th International Cosmic Ray Conference Highlight lectures, 10, 243-254 (2005)</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFourteen">
+        <button id="icrc28" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+          28th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>28th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5">A Study of Nuclear Composition of Primary Cosmic Rays above 100 TeV<br>H. Tanaka, S.K. Gupta, Y. Hayashi, Y. Ishida, N. Ito, Atul Jain, A.V. John, S. Kawakami, H. Kojima, T. Matsuyama, D.K. Mohanty, P.K. Mohanty, S.D. Morris, T. Nonaka, A. Oshima, K.C. Ravindran, M. Sasano, K. Sivaprasad, B.V. Sreekantan, S. Tamaki, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 28th International Cosmic Ray Conference, 1, 155-158 (2003)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">A Study of the Primary Composition at 10<sup>14</sup> - 10<sup>15</sup> eV with the GRAPES-2 array at Ooty<br>S.C. Tonwar, S.K. Gupta, Y. Hayashi, N. Ito, Atul Jain, A.V. John, S. Kawakami, D.K. Mohanty, P.K. Mohanty, S.D. Morris, T. Nonaka, K.C. Ravindran, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 28th International Cosmic Ray Conference, 1, 167-170 (2003)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Upper Limit on the Diffuse Gamma Ray Flux Using Air Shower Observations at Ooty<br>Y. Hayashi, S.K. Gupta, Y. Ishida, N. Ito, S. Kawakami, H. Kojima, D.K. Mohanty, P.K. Mohanty, T. Nonaka, A. Oshima, M. Sasano, K. Sivaprasad, B.V. Sreekantan, S. Tamaki, H. Tanaka, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 28th International Cosmic Ray Conference, 4, 2273-2276 (2003)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Study of Cosmic Ray Short Term Variations Using GRAPES-3 Muon Telescopes<br>T. Nonaka, Y. Hayashi, Y. Ishida, N. Ito, S. Kawakami, A. Oshima, S. Tamaki, H. Tanaka, T. Yoshikoshi, K. Fujimoto, H. Kojima, S.K. Gupta, Atul Jain, A.V. John, D.K. Mohanty, P.K. Mohanty, S.D. Morris, K.C. Ravindran, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar, K. Viswanathan<br><i style="color:#FF8080">Proceedings of the 28th International Cosmic Ray Conference, 6, 3569-3572 (2003)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Observation of Anisotropy of Cosmic Rays with Solar Time Using the Multidirectional Muon Telescope of GRAPES-3 Shower Array<br>H. Kojima, K. Fujimoto, S.K. Gupta, Y. Hayashi, Y. Ishida, N. Ito, Atul Jain, S. Kawakami, T. Nonaka, A. Oshima, K. Sivaprasad, S. Tamaki, H. Tanaka, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 28th International Cosmic Ray Conference, 7, 3913-3916 (2003)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Studies on Cosmic Ray Sidereal Anisotropy with the Multidirectional&nbsp; Muon Telescope at Ooty<br>H. Kojima, K. Fujimoto, S.K. Gupta, Y. Hayashi, Y. Ishida, N. Ito, Atul Jain, S. Kawakami, T. Nonaka, A. Oshima, K. Sivaprasad, S. Tamaki, H. Tanaka, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 28th International Cosmic Ray Conference, 7, 3957-3960 (2003)</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFifteen">
+        <button id="icrc27" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+          27th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+    <ol>
+              <h3><a>27th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5">Upper Limits on the Isotropic Gamma Ray / Cosmic Ray Ratio from the GRAPES III Experiment at Ooty<br>Y. Hayashi, S.K. Gupta, N. Ito, A. Jain, S. Kawakami, H. Kojima, D.K. Mohanty, T. Nonaka, S. Noto, K.C. Ravindran, M. Sasano, K. Satomi, K. Sivaprasad, H. Tanaka, T. Toyofuku, S.C. Tonwar, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 27th International Cosmic Ray Conference, 6, 2385-2387 (2001)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">The Average Mass Number of Primary Cosmic Rays around the Knee Region Derived from GRAPES III Array at Ooty<br>Y. Hayashi, S.K. Gupta, N. Ito, A. Jain, S. Kawakami, H. Kojima, D.K. Mohanty, T. Nonaka, S. Noto, K.C. Ravindran, K. Satomi, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, T. Toyofuku, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 27th International Cosmic Ray Conference, 1, 111-114 (2001)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">The First Outcome on the 3-D Feature of Forbush Decrease Events from Large Muon Telescope of GRAPES III at Ooty<br>S. Kawakami, K. Fujimoto, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, H. Kojima, D.K. Mohanty, T. Nonaka, S. Noto, K.C. Ravindran, K. Satomi, K. Sivaprasad, H. Tanaka, S.C. Tonwar, T. Toyofuku, K. Viswanathan, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 27th International Cosmic Ray Conference, 9, 3473-3476 (2001)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Observation of Cosmic Ray Sidereal Time Variation by GRAPES III Muon Telescope at Ooty<br>H. Kojima, K. Fujimoto, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, S. Kawakami, D.K. Mohanty, T. Nonaka, S. Noto, K.C. Ravindran, K. Satomi, K. Sivaprasad, H. Tanaka, T. Toyofuku, S.C. Tonwar, T. Yoshikoshi<br><i style="color:#FF8080">Proceedings of the 27th International Cosmic Ray Conference, 10, 3943-3945 (2001)</i></p></li>
+                  <li><p align="justify" style="line-height:1.5">Detector Responses of the GRAPES III Scintillation and Muon Counters<br>T. Yoshikoshi, S.K. Gupta, Y. Hayashi, N. Ito, A. Jain, S. Kawakami, H. Kojima, D.K. Mohanty, T. Nonaka, S. Noto, K.C. Ravindran, K. Satomi, K. Sivaprasad, H. Tanaka, S.C. Tonwar, T. Toyofuku, K. Viswanathan<br><i style="color:#FF8080">Proceedings of the 27th International Cosmic Ray Conference, 2, 612-615 (2001)</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSixteen">
+        <button id="icrc26" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+          26th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+    <ol>
+              <h3><a>26th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5">Observation of cosmic ray modulation and possible detection of the solar flares with GRAPES III muon telescopes at Ooty<br>S. Kawakami, Y. Aikawa, N. Ikeda, S.K. Gupta, Y. Hayashi, N. Ito, H. Kojima, D.K. Mohanty, K. Sasaki, M. Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar<br><i style="color:#FF8080">Proceedings of the 26th International Cosmic Ray Conference, 7, 171-174 (1999)</i></p></li>
+  
+                  <li><p align="justify" style="line-height:1.5">The size spectrum of small Air Shower at Ooty GRAPES III (800 g/cm<sup>2</sup>)<br>Y. Hayashi, Y. Aikawa, N. Ikeda, S.K. Gupta, N. Ito, S. Kawakami, S. Miyake, D.K. Mohanty, M. Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, K. Sasaki, S.C. Tonwar<br><i style="color:#FF8080">Proceedings of the 26th International Cosmic Ray Conference, 1, 236-239 (1999)</i></p></li>
+  
+                  <li><p align="justify" style="line-height:1.5">A Study on the Lateral Structure of Muons in Extensive Air Showers with the GRAPES Array at Ooty<br>Y. Hayashi, Y. Aikawa, N.V. Gopalakrishnan, S.K. Gupta, N. Ito, S. Kawakami, D.K. Mohanty, K.C. Ravindran, K. Sasaki, M. Sasano, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan<br><i style="color:#FF8080">Proceedings of the 26th International Cosmic Ray Conference, 1, 276-279 (1999)</i></p></li>
+  
+                  <li><p align="justify" style="line-height:1.5">Limits on the Isotropic γ-ray / Cosmic ray Ratio in the Ultra High Energy region from the EAS Experiment at Ooty<br>M. Sasano, Y. Aikawa, N.V. Gopalakrishnan, S.K. Gupta, Y. Hayashi, N. Ito, S. Kawakami, D.K. Mohanty, K.C.&nbsp;Ravindran, K. Sasaki, K. Sivaprasad, B.V. Sreekantan, H. Tanaka, S.C. Tonwar, K. Viswanathan<br><i style="color:#FF8080">Proceedings of the 26th International Cosmic Ray Conference, 4, 85-88 (1999)</i></p></li>
+              </ol>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeventeen">
+        <button id="icrc25" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+          25th International Cosmic Ray Conference
+        </button>
+      </h2>
+      <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
+        <div class="accordion-body subpage-text">
+          <ol>
+              <h3><a>25th International Cosmic Ray Conference</a></h3>
+                  <li><p align="justify" style="line-height:1.5">A search for cosmic gamma ray bursts at GeV energys from simultaneous observations with GRAPES II and GRAPES III arrays at Ooty<br>S.C. Tonwar, Y. Aikawa, S.K. Gupta, Y. Hayashi, N. Ikeda, N. Ito, S. Kawakami, S. Miyake, D.K. Mohanty, M. Sasano, K. Sivaprasad, B.V. Sreekantan<br><i style="color:#FF8080">Proceedings of the 25th International Cosmic Ray Conference, 3, 77-79 (1997)</i></p></li>
+  
+                  <li><p align="justify" style="line-height:1.5">A new study on the composition of primary cosmic ray flux
+  over the energy range 3x10<sup>13</sup> - 3x10<sup>16</sup> eV with the GRAPES III EAS array at Ooty<br>S. Kawakami, Y. Aikawa, S.K. Gupta, Y. Hayashi, N. Ikeda, N. Ito, S. Miyake, D.K. Mohanty, M. Sasano, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar<br><i style="color:#FF8080">Proceedings of the 25th International Cosmic Ray Conference, 4, 5-8 (1997)</i></p></li>
+  
+                  <li><p align="justify" style="line-height:1.5">A study on fine features in the energy spectrum of primary cosmic rays over the energy range 1x10<sup>14</sup> - 3x10<sup>16</sup> eV with the GRAPES III EAS array at Ooty<br>S.K. Gupta, Y. Aikawa, Y. Hayashi, N. Ikeda, N. Ito, S. Kawakami, S. Miyake, D.K. Mohanty, M. Sasano, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar<br><i style="color:#FF8080">Proceedings of the 25th International Cosmic Ray Conference, 4, 153-156 (1997)</i></p></li>
+  
+                  <li><p align="justify" style="line-height:1.5">GRAPES III : A new large EAS experiment at Ooty<br>N. Ito, Y. Aikawa, S.K. Gupta, Y. Hayashi, N. Ikeda, S. Kawakami, S. Miyake, D.K. Mohanty, M. Sasano, K. Sivaprasad, B.V. Sreekantan, S.C. Tonwar<br><i style="color:#FF8080">Proceedings of the 25th International Cosmic Ray Conference, 7, 225-228 (1997)</i></p></li>
+              </ol>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!--Conference Proceedings ends-->
+
+
+<!--footer start-->
+<div id="footer-space">
+</div>
+<script>
+  fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById("footer-space").innerHTML = data;
+  })
+  .catch(error => console.error('Error fetching navigation:', error));
+</script>
+<!--footer end-->
+     <script src="./js/main.js"></script>
+     <script src="./js/bootstrap.bundle.min.js"></script>
+     <script>
+
+        function fontchange(n){
+              var paragraph = document.getElementById('journal-text');
+              var paragraph1 = document.getElementById('cp-text');
+              paragraph.style.fontSize = n + "px";
+              paragraph1.style.fontSize = n + "px";
+          }
+  
+          var buttons = document.querySelector(".buttons");
+          var button = buttons.querySelectorAll(".button");
+  
+          for(var i = 0; i < button.length; i++){
+              button[i].addEventListener('click', function(){
+                  var current = document.getElementsByClassName('active');
+                  current[0].className = current[0].className.replace("active", "");
+                  this.className += " active"
+              })
+          }
+   
+      </script>
+      <!--<script>
+        function fontchange(n){
+            var text1 = document.getElementById('publications-text');
+            var elements = text1.querySelectorAll('*:not(h1):not(h2)');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.fontSize = n + "px";
+        }
+        }
+          var buttons = document.querySelector(".buttons");
+          var button = buttons.querySelectorAll(".button");
+      </script>-->
+</body>
+</html>

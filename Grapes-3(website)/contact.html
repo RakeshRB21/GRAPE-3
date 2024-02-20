@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+      <!--Navbar end-->
+</header>
+<div id="cc-text">
+<div class="subpage-head">
+  <h1>Contact Us</h1>
+</div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;">Principal Investigators</h2>
+    <h5>1. Dr. Pravata K. Mohanty</h5>
+    <p>Department of High Energy Physics,<br>
+        Tata Institute of Fundamental Research,<br>
+        Homi Bhabha Road, Colaba,<br>
+        Mumbai 400005, India.<br>
+        Tel: +91-22-2278-2513<br>
+        E-Mail: pkm@tifr.res.in</p>
+    <h5>2. Dr. Mohamed Rameez</h5>
+    <p>Department of High Energy Physics,<br>
+        Tata Institute of Fundamental Research,<br>
+        Homi Bhabha Road, Colaba,<br>
+        Mumbai 400005, India.<br>
+        Tel: +91-22-2278-2542<br>
+        E-Mail: mohamed.rameez@tifr.res.in</p>
+    <hr>
+    </div>
+    <div class="subpage-text site-text">
+      <h2 style="text-align: center;">Outreach Coordinator</h2>
+      <h5>Dr. Hari Haran Balakrishnan</h5>
+      Cosmic Ray Laboratory,<br>
+      Tata Institute of Fundamental Research,<br>
+      Raj Bhavan,<br>
+      Ooty, The Nilgiris,<br>
+      Tamil Nadu - 643001, India.<br>
+      Tel: +91 (423) 2225060<br>
+      E-Mail: hariharan@crl.tifr.res.in
+      <hr>
+      </div>
+      <div class="subpage-text site-text">
+        <h2 style="text-align: center;">Officer-In-Charge</h2>
+        <h5>Mr. Atul Jain</h5>
+        Cosmic Ray Laboratory,<br>
+        Tata Institute of Fundamental Research,<br>
+        Raj Bhavan,<br>
+        Ooty, The Nilgiris,<br>
+        Tamil Nadu - 643001, India.<br>
+        Tel: +91 (423) 2225015<br>
+        E-Mail: oic@crl.tifr.res.in
+        <hr>
+        </div>  
+      
+    <div class="subpage-text site-text" style="padding-bottom: 15px;">
+    <h2 style="text-align: center;">Contact Webmaster</h2>
+    <p>For any queries,<br>
+        E-Mail: webmaster@grapes-3.tifr.res.in</p>
+    </div>
+</div>
+
+    
+      <!--footer start-->
+    <div id="footer-space">
+    </div>
+    <script>
+      fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("footer-space").innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching navigation:', error));
+    </script>
+    <!--footer end-->
+     
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        function fontchange(n){
+            var text = document.getElementById('cc-text');
+            var elements = text.querySelectorAll('*:not(h1):not(h2):not(h5)');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.fontSize = n + "px";
+        }
+        }
+          var buttons = document.querySelector(".buttons");
+          var button = buttons.querySelectorAll(".button");
+    </script>
+</body>
+</html>

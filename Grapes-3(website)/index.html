@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAPES-3</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+      <!--font-size buttons-->
+      <float>
+      <div class="buttons bg-dark pt-2 pb-2">
+        <a class="font-inc" onclick="fontchange(12)">-A</a>
+        <a class="font-inc" onclick="fontchange(16)">A</a>
+        <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+      </div>
+      </float>
+      <!-- Scroll Up button -->
+      <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+      <!-- color switcher -->
+      <button id="color-switcher-btn"><i class="fa fa-cog fa-2x" style="text-align: center;"></i></button>
+      <div id="color-switcher">
+        <form class="color-picker">
+          <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+        
+            <label for="blue" class="visually-hidden">Blue theme</label>
+            <input type="radio" id="blue" name="theme">
+        
+            <label for="green" class="visually-hidden">Green theme</label>
+            <input type="radio" id="green" name="theme">
+        
+            <label for="red" class="visually-hidden">Red theme</label>
+            <input type="radio" id="red" name="theme">
+          </fieldset>
+          </form>
+        </div>
+      <!--Navbar start-->
+      <div id="navbar">
+      </div>
+      <script>
+      fetch("nav.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("navbar").innerHTML = data;
+          })
+          .catch(error => console.error('Error fetching navigation:', error));
+      </script>
+    <!--Navbar end-->
+        <!-- caraosel start -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+            <div class="carousel-inner carousel-size" >
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="./images/img1.png" class="d-block w-100" alt="Prof.Sunil Gupta's achievement with background image of GRAPES-3 site">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/img2.jpg" class="d-block w-100" alt="Group photo of GRAPES-3 team">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/img3.jpg" class="d-block w-100" alt="Image of GRAPES-3 site">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- caraosel end -->
+     </header>
+     <hr>
+     <div id="home-text">
+     <div style="width:100%;" class="site-text">
+        <p align="justify">The GRAPES-3 experiment located at <a href="http://en.wikipedia.org/wiki/Ooty" target="_blank">Ooty</a> in India started as a collaboration of the Tata Institute of Fundamental Research, Mumbai, India and the Osaka City University, Osaka, Japan. At present many institutions from India and Japan are in collaboration.</p>
+        <p align="justify">GRAPES-3 (<b>G</b>amma <b>R</b>ay <b>A</b>stronomy <b>P</b>eV <b>E</b>nergie<b>S</b> phase-<b>3</b>) is designed to study cosmic rays with an array of air shower detectors and a large area muon detector. It aims to probe acceleration of cosmic rays in the following four astrophysical settings. These include acceleration of particles to, (i) ~100 MeV in atmospheric electric fields through muons, (ii) ~10 GeV in Solar system through muons, (iii) ~1 PeV in our galaxy through nuclear composition of cosmic rays, (iv) ~100 EeV in nearby universe through measurement of diffuse γ-ray flux.</p>
+        <p align="justify">The GRAPES-3 is located at N11.4<sup>o</sup>, E76.7<sup>o</sup>, 2200m above mean sea level. The observations began with 217 plastic scintillators and a 560 m² area muon detector in 2000. The scintillators detect charged particles contained in extenstive air showers produced by interaction of high energy cosmic rays in the atmosphere. At present the array is operating with ~400 scintillators that are spread over an area of 25,000 m². The energy threshold of muon detectors is 1 GeV.</p>
+
+        <h2>Objectives of the GRAPES-3 Experiment</h2>
+        <p>Study of</p>
+        <li>The origin, acceleration and propagation of &gt;10<sup>14</sup> eV cosmic rays in the galaxy and beyond.</li>
+        <li>Existence of “<i>Knee</i>” in the energy spectrum of cosmic rays.</li>
+        <li>Production and/or acceleration of highest energy (~10<sup>20</sup> eV) cosmic rays in the universe.</li>
+        <li>Astronomy of multi-TeV γ-rays from neutron stars and other compact object.</li>
+        <li>Sun the closest astrophysical object, accelerator of energetic particles and its effects on the Earth.</li>
+     </div>
+     <!-- Science news -->
+    <div class="site-text science-news">
+    <hr>
+    <h2 style="text-align: center; padding-top: 10px;">Science News</h2>
+    <div class="science-cards">
+    <div class="news-card">
+      <div class="news-image img-one"></div>
+        <div class="news-content">
+          <h5>Measurement of the Electrical Properties of a Thundercloud Through Muon Imaging by the GRAPES-3 Experiment</h5>
+          <a href="https://grapes-3.tifr.res.in/publications/misc/Thunderstorm_v3.pdf" target="_blank" class="button">Read more</a>
+        </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image img-two"></div>
+        <div class="news-content">
+          <h5>Title two</h5>
+          <a href="" class="button">Read more</a>
+        </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image img-three"></div>
+        <div class="news-content">
+          <h5>Title three</h5>
+          <a href="" class="button">Read more</a>
+        </div>
+    </div>
+    </div>
+    <a href="./discovery.html" target="_blank" class="more-link">More details about discovery</a>
+    <br>
+    <a href="./science.html#news" target="_blank" class="more-link">More news</a>
+    <hr>
+    </div>
+    <!-- Notice Board -->
+    <div class="site-text notice-board">
+    <h2 style="text-align: center; padding-top: 10px;">Notice Board</h2> 
+    <div class="notice-cards">
+      <div class="notice-card">
+          <div class="notice-content">
+            <h5>Nominations are open for IUPAP-TIFR Homi Bhabha Award 2021</h5>
+            <a href="https://grapes-3.tifr.res.in/homibhabhaaward.html" target="_blank" target="_blank" class="read-more-btn">Read more</a>
+          </div>
+      </div>
+      <div class="notice-card">
+          <div class="notice-content">
+            <h5>21st International Symposium on Very High Energy Cosmic Ray Interactions - ISVHECRI 2020 is posponed due to Covid-19 pandemic</h5>
+            <a href="https://isvhecri2020.tifr.res.in/" target="_blank" class="read-more-btn">Read more</a>
+          </div>
+      </div>
+    </div>
+    <hr>
+    </div>
+  <!--footer start-->
+  <div id="footer-space">
+  </div>
+  <script>
+    fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer-space").innerHTML = data;
+    })
+    .catch(error => console.error('Error fetching navigation:', error));
+  </script>
+  <!--footer end-->
+
+      <script src="./js/main.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script>
+        function fontchange(n){
+            var text = document.getElementById('home-text');
+            var elements = text.querySelectorAll('*:not(h1):not(h2)');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.fontSize = n + "px";
+        }
+        }
+          var buttons = document.querySelector(".buttons");
+          var button = buttons.querySelectorAll(".button");
+      </script> 
+</body>
+</html>

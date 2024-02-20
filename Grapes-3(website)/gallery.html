@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--Navbar end-->
+        <div id="gallery-text">
+            <div class="subpage-head">
+              <h1>Gallery</h1>
+            </div>
+            <div class="subpage-text site-text">
+               <h2 style="text-align: center;">Pictures</h2>
+               <div class="subpage-text">
+                <h4>WAPP</h4>
+                <ul>
+                    <li><a href="https://photos.app.goo.gl/mXTKRd73KLaSXiA26" target="_blank">2016</a></li>
+                    <li><a href="https://photos.app.goo.gl/Z4ZDgUgz1rUzNSh87" target="_blank">2014</a></li>
+                    <li><a href="https://photos.app.goo.gl/3m8jcmiR2SyzK4b6A" target="_blank">2012</a></li>
+                    <li><a href="https://photos.app.goo.gl/xw3xiBdTWcDn8X8j9" target="_blank">2010</a></li>
+                </ul>
+                <hr>
+               </div>
+               <div class="subpage-text">
+                <h4>Public Lectures</h4>
+                <ul>
+                    <li><a href="https://photos.app.goo.gl/HGjkXx91j2CEFEix6" target="_blank">2018</a></li>
+                    <li><a href="https://photos.app.goo.gl/V8GccKPfxAHgapY99" target="_blank">2017</a></li>
+                    <li><a href="https://photos.app.goo.gl/svyRvEZAmwzzakxv5" target="_blank">2016</a></li>
+                    <li><a href="https://photos.app.goo.gl/WorUnSeHN47YcrGt8" target="_blank">2014</a></li>
+                </ul>
+                <hr>
+               </div>
+               <div class="subpage-text">
+                <h4>National Science Day</h4>
+                <ul>
+                    <li><a href="https://photos.app.goo.gl/ohHu3ua4m8DQJox27" target="_blank">2016</a></li>
+                    <li><a href="https://photos.app.goo.gl/UafxJNb64PCegYDo8" target="_blank">2015</a></li>
+                </ul>
+                <hr>
+               </div>
+               <div class="subpage-text">
+                <h4>Miscellaneous</h4>
+                <ul>
+                    <li><a href="https://photos.app.goo.gl/fLbLLYZr4FZFt3Cw9" target="_blank">World Hindi Day 2020</a></li>
+                    <li><a href="https://photos.app.goo.gl/mYccpCYHFbmG7v3K8" target="_blank">CORSIKA School 2010</a></li>
+                </ul>
+                <hr>
+               </div>
+            </div>
+            <div class="subpage-text site-text">
+                <h2 style="text-align: center;">Videos</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/chaiandwhy/videos/201441914325574/" target="_blank">Cosmic rays : Powerful messengers across the universe @ "Chai and Why?" on 02-02-2020</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=QTHFX6_Ybqk" target="_blank">Cosmic Ray Laboratory, aired in DD Podhigai on 4th Dec 2014</a></li>
+                </ul>
+            </div>
+        </div>
+            <!--footer start-->
+            <div id="footer-space">
+            </div>
+            <script>
+              fetch("footer.html")
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById("footer-space").innerHTML = data;
+              })
+              .catch(error => console.error('Error fetching navigation:', error));
+            </script>
+            <!--footer end-->
+            <script src="./js/main.js"></script>
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <script>
+                function fontchange(n){
+                    var text = document.getElementById('gallery-text');
+                    var elements = text.querySelectorAll('*:not(h1):not(h2):not(h4)');
+        
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.fontSize = n + "px";
+                }
+                }
+                  var buttons = document.querySelector(".buttons");
+                  var button = buttons.querySelectorAll(".button");
+            </script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--Navbar end-->
+</header>
+<div id="members-text">
+<div class="subpage-head">
+  <h1>Members</h1>
+</div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center; margin-bottom: 2%;"><a id="current-members">Current Members</a></h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Academic
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table class="members-table" style="width:100%">
+                    <colgroup>
+                    <col style="width:60%">
+                    <col style="width:40%">
+                    </colgroup><tbody>
+                    <tr>
+                        <th><center>Name</center></th>
+                        <th><center>Role</center></th>
+                    </tr>
+                    <tr>
+                        <td>S.R. Dugad</td>
+                        <td>Professor</td>
+                    </tr>
+                    <tr>
+                        <td>P.K. Mohanty</td>
+                        <td>Reader</td>
+                    </tr>
+                    <tr>
+                        <td>M. Rameez</td>
+                        <td>Reader</td>
+                    </tr>
+                    
+                    </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Scientific
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table class="members-table" style="width:100%">
+                    <colgroup>
+                    <col style="width:60%">
+                    <col style="width:40%">
+                    </colgroup><tbody>
+                    <tr>
+                        <th><center>Name</center></th>
+                        <th><center>Role</center></th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://sites.google.com/view/89hariharan" target="_blank">B. Hari Haran</a></td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>P. Jagadeesan</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>Atul Jain</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>K. Manjunath</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>S. Murugapandian</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>P.K. Nayak</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>B. Rajesh</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>P.S. Rakshe</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>K. Ramesh</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>L.V. Reddy</td>
+                        <td>Scientific Officer</td>
+                    </tr>
+                    <tr>
+                        <td>R. Suresh Kumar</td>
+                        <td>Scientific Officer</td>
+                    </tr>                    
+                </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Technical
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table class="members-table" style="width:100%">
+                    <colgroup>
+                    <col style="width:60%">
+                    <col style="width:40%">
+                    </colgroup><tbody>
+                    <tr>
+                        <th><center>Name</center></th>
+                        <th><center>Role</center></th>
+                    </tr>
+                    <tr>
+                        <td>D.B. Arjunan</td>
+                        <td>Laboratory Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>V. Jeyakumar</td>
+                        <td>Laboratory Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S. Kingston</td>
+                        <td>Laboratory Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S. Pandurangan</td>
+                        <td>Laboratory Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>V. Santhosh Kumar</td>
+                        <td>Laboratory Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>C. Shobana</td>
+                        <td>Laboratory Assistant</td>
+                    </tr>
+                    
+                    </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Auxillary
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <table class="members-table" style="width:100%">
+                    <colgroup>
+                    <col style="width:60%">
+                    <col style="width:40%">
+                    </colgroup><tbody>
+                    <tr>
+                        <th><center>Name</center></th>
+                        <th><center>Role</center></th>
+                    </tr>
+                    <tr>
+                        <td>A.S. Bosco</td>
+                        <td>Work Assistant</td>
+                    </tr>
+                            
+                    <tr>
+                        <td>N.K. Lokre</td>
+                        <td>Administrative Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>R. Ravi</td>
+                        <td>Work Assistant</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S. Sathyaraj</td>
+                        <td>Clerk</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>M.S. Shareef</td>
+                        <td>Work Assistant</td>
+                    </tr>               
+                    </tbody></table>
+
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Students and Fellows
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <table class="members-table" style="width:100%">
+                    <colgroup>
+                    <col style="width:60%">
+                    <col style="width:40%">
+                    </colgroup><tbody>
+                    <tr>
+                        <th><center>Name</center></th>
+                        <th><center>Role</center></th>
+                    </tr>
+                    <tr>
+                        <td>M. Zuberi</td>
+                        <td>Visiting Fellow</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>D. Pattanaik</td>
+                        <td>Senior Research Fellow</td>
+                    </tr>
+                    </tbody></table>
+              </div>
+            </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="subpage-text site-text">
+        <h2 style="text-align: center; margin-bottom: 2%;"><a id="ex-members">Ex-Members</a></h2>
+        <div class="accordion" id="accordionExample2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                  Academic
+                </button>
+              </h2>
+              <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    <table class="members-table" style="width:100%">
+                        <colgroup>
+                        <col style="width:60%">
+                        <col style="width:40%">
+                        </colgroup><tbody>
+                        <tr>
+                            <th><center>Name</center></th>
+                            <th><center>Role</center></th>
+                        </tr>
+                        <tr>
+                            <td>Sunil K Gupta</td>
+                            <td>Sr. Professor</td>
+                        </tr>
+                        <tr>
+                            <td>Prof. S.C. Tonwar</td>
+                            <td>Sr. Professor</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                  Scientific
+                </button>
+              </h2>
+              <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    <table class="members-table" style="width:100%">
+                        <colgroup>
+                        <col style="width:60%">
+                        <col style="width:40%">
+                        </colgroup><tbody>
+                        <tr>
+                            <th><center>Name</center></th>
+                            <th><center>Role</center></th>
+                        </tr>
+                        <tr>
+                            <td>S.D. Morris</td>
+                            <td>Scientifc Officer</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>B.S. Rao</td>
+                            <td>Scientific Officer</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>K.C. Ravindran</td>
+                            <td>Scientific Officer</td>
+                        </tr>                
+                    </tbody></table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                  Technical
+                </button>
+              </h2>
+              <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    <table class="members-table" style="width:100%">
+                        <colgroup>
+                        <col style="width:60%">
+                        <col style="width:40%">
+                        </colgroup><tbody>
+                        <tr>
+                            <th><center>Name</center></th>
+                            <th><center>Role</center></th>
+                        </tr>
+                        <tr>
+                            <td>K. Ramadass</td>
+                            <td>Laboratory Assistant</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>C. Ravindran</td>
+                            <td>Technical Officer</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>G.P. Francis</td>
+                            <td>Technical Assistant</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+                    Auxillary
+                  </button>
+                </h2>
+                <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour2" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    <table class="members-table" style="width:100%">
+                        <colgroup>
+                        <col style="width:60%">
+                        <col style="width:40%">
+                        </colgroup><tbody>
+                        <tr>
+                            <th><center>Name</center></th>
+                            <th><center>Role</center></th>
+                        </tr>
+                        <tr>
+                            <td>I.M. Haroon</td>
+                            <td>Work Assistant</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>S.S. Mary</td>
+                            <td>Work Assistant</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>V. Viswanathan</td>
+                            <td>Administrative Officer</td>
+                        </tr>
+                        <tr>
+                            <td>V. Ravikumar</td>
+                            <td>Work Assistant</td>
+                        </tr>             
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
+                    Students and Fellows
+                  </button>
+                </h2>
+                <div id="collapseFive2" class="accordion-collapse collapse" aria-labelledby="headingFive2" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    <table class="members-table" style="width:100%">
+                        <colgroup>
+                        <col style="width:60%">
+                        <col style="width:40%">
+                        </colgroup><tbody>
+                        <tr>
+                            <th><center>Name</center></th>
+                            <th><center>Role</center></th>
+                        </tr>
+                        <tr>
+                            <td>J.B. Vuta</td>
+                            <td>Research Scholar</td>
+                        </tr>
+                        <tr>
+                            <td>K.P. Arunbabu</td>
+                            <td>Visiting Fellow</td>
+                        </tr>
+                        <tr>
+                            <td>M. Minamino</td>
+                            <td>Ph.D. Student</td>
+                        </tr>
+                        <tr>
+                            <td>S. Kole</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>M. Buragohain</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>T. Gupta</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>J.S. Varghese</a></td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        <tr>
+                            <td>A. Manjare</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>S. Manu</td>
+                            <td>Visiting Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>S. Negi</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        <tr>
+                            <td>H. Mahapatra</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>S. Mishra</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>A. Chandra</td>
+                            <td>Junior Research Fellow</td>
+                        </tr>
+                    </tbody></table>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+
+          <!--footer start-->
+          <div id="footer-space">
+        </div>
+        <script>
+          fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("footer-space").innerHTML = data;
+          })
+          .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+            <!--footer end-->
+             
+            <script src="./js/main.js"></script>
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <script>
+                function fontchange(n){
+                    var text = document.getElementById('members-text');
+                    var elements = text.querySelectorAll('*:not(h1):not(h2):not(h3):not(a)');
+        
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.fontSize = n + "px";
+                }
+                }
+                  var buttons = document.querySelector(".buttons");
+                  var button = buttons.querySelectorAll(".button");
+            </script>
+</body>
+</html>

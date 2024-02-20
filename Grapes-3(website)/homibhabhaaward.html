@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IUPAP-TIFR-Locus Prize</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+        <!--Navbar end-->
+</header>
+<div id="iupap-text">
+<div class="subpage-head">
+  <h1>IUPAP-TIFR-Locus Prize</h1>
+</div>
+     <!-- caraosel start -->
+     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+          <div class="carousel-inner carousel-size" >
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="./images/homibhabhaawardpics/DSC_1112.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./images/homibhabhaawardpics/DSC_1150.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./images/homibhabhaawardpics/DSC_2462.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/homibhabhaawardpics/DSC_2499.JPG" class="d-block w-100" alt="...">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- caraosel end -->
+    <div class="subpage-text site-text">
+        <p align="justify">
+            The IUPAP-TIFR Homi Bhabha Award (Certificate, Medal and Prize) was established
+            by the International Union of Pure and Applied Physics (IUPAP) and the Tata
+            Institute of Fundamental Research (TIFR), Mumbai, India in 2010 to honor Dr.
+            Homi Jehangir Bhabha, a cosmic ray physicist well-known for the Bhabha-Heitler
+            cascade theory and relativistic positron-electron scattering, also known as
+            Bhabha scattering. Homi Bhabha founded the TIFR in 1945 and initiated the
+            nuclear energy program in India in 1951 with strong support from the well-known
+            philanthropist and industrialist JRD Tata and the Government of India then led
+            by Prime Minister Jawaharlal Nehru. Homi Bhabha initiated experimental programs
+            for the study of cosmic ray particles and their interactions with instruments
+            either carried aloft to the top of the atmosphere with balloons or placed in
+            laboratories at high altitude or deep underground. The Homi Bhabha Medal and
+            Prize consists of a certificate, a medal, a significant monetary award and an
+            invitation to visit the TIFR, Mumbai, and the Cosmic Ray Laboratory, Ooty to
+            give public lectures there, and will be awarded biennially at the International
+            Cosmic Ray Conferences (ICRCs), held generally in odd numbered years.
+            </p>
+            
+            <p align="justify">
+            The IUPAP-TIFR Homi Bhabha Award will be given to an active scientist who has
+            made distinguished contributions in the field of cosmic ray physics over an
+            extended academic career. The winner of the prize will be selected by the
+            members of the C4 and a senior cosmic ray scientist nominated by the Director,
+            TIFR. The winner of the 2023 prize will be announced at the opening session of
+            the 38th ICRC 2023, on 26 July 2023, and invited to visit India at a mutually
+            convenient time thereafter to deliver two public lectures. The Director, TIFR
+            will present the Homi Bhabha medal and the monetary award to the winner on this
+            occasion. The winner will be provided with reasonable travel expenses and local
+            hospitality for the visit to TIFR, Mumbai and Cosmic Ray Laboratory, Ooty in
+            India.
+            </p>
+            
+            <p align="justify">
+            Nominators are encouraged to consider nominating women and persons from
+            minority backgrounds in line with the IUPAP objective of a better reflection of
+            geographic and gender balance. Nominations should include a letter supporting
+            the case, the nominee’s curriculum vitae, and a list of important publications.
+            The sponsor may also wish to ask two co-sponsors to send separate letters
+            supporting the nomination.
+            </p>
+        <hr>
+    </div>
+    <div class="subpage-text site-text">
+        <p></p><div style="text-align: justify;">
+        </div><p class="MsoNormal" style="line-height: 200%;" align="left"></p><div style="text-align: justify;"><span lang="EN-US">
+        <font size="3" color="blue">Nominations of suitable recipients should be sent to: <br><br>
+        Prof. Takaaki Kajita <br>
+        Chair of the IUPAP C4 Commission (Astroparticle Physics) <br>
+        E-mail address: nomination_C4@icrr.u-tokyo.ac.jp</font>  
+        </span><br><span lang="EN-US"></span>
+        <hr>
+    </div>
+    </div>
+    <div class="subpage-text site-text">
+        <p class="MsoNormal" align="left"><b> <span style="font-size: 16pt; color:
+        red;" lang="EN-US"> The deadline for the receipt of nominations is 10
+        March 2023. <o:p></o:p></span></b></p> <p style="margin-left: 0px; width:
+        807px;" class="MsoNormal" align="left"> <span lang="EN-US"><font size="3">Self-nominations will not be considered.
+        
+    </font></span></p><p align="justify"><font size="3"> 
+    A list of the previous winners can be also found at the website of C4.
+    </font></p><font size="3">
+    </font>
+    <hr>
+    </div>
+    <div class="subpage-text site-text scientist-images">
+        <h2><a name="past">Past Winners</a></h2>
+		<h4><a name="2011" href="https://www.dur.ac.uk/physics/staff/profiles/?id=1822" target="_blank">1. Prof. Sir Arnold Wolfendale, Durham University, United Kingdom</a></h4>
+			<img src="./images/homibhabhaawardpics/arnold.jpg" alt="" hspace="100">
+			<p><font size="4" color="blue"><a href="http://icrc2011.ihep.ac.cn/awards.htm">Awarded in "32nd ICRC 2011, Beijing"</a></font></p>
+			<h6>Visited India in November 2014 and delivered public lectures</h6>
+			<p><i style="color:#FF8080">1. At Cosmic Ray Laboratory, Ooty</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=3" target="_blank">Art &amp; Science</a> <br>   Venue : Anna stadium, Ooty on 13-11-2014 14:00 Hrs<br><i style="color:#FF8080">2. At Tata Institute of Fundamental Research, Mumbai</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=308" target="_blank">Cosmic Rays and Cosmology</a> <br> Venue : Dr. Homi Bhabha Auditorium, TIFR, Mumbai on 17-11-2014 17:00 Hrs</p>
+            <hr>
+
+		<h4><a name="2013" href="https://www.mpi-hd.mpg.de/mpi/en/voelk/home" target="_blank">2. Prof. Heinrich J. Völk, Max-Planck-Institute for Nuclear Physics, Germany</a></h4>
+			<img src="./images/homibhabhaawardpics/heinrich.jpg" alt="" hspace="100">
+			<p><font size="4" color="blue"><a href="http://www.cbpf.br/~icrc2013/bhabha.html">Awarded in "33rd ICRC 2013, Rio de Janeiro"</a></font></p>
+			<h6>Visited India in Jan 2016 and delivered public lectures</h6>
+			<p><i style="color:#FF8080">1. At Cosmic Ray Laboratory, Ooty</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=88" target="_blank">Cosmic Rays, their sources, and their movement in the Galaxy</a> <br>   Venue : Anna stadium, Ooty on 27-01-2016 14:00 Hrs<br><i style="color:#FF8080">2. At Tata Institute of Fundamental Research, Mumbai</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=307" target="_blank">Cosmic Rays from our Galaxy</a> <br> Venue : Dr. Homi Bhabha Auditorium, TIFR, Mumbai on 29-01-2016 17:00 Hrs</p>
+            <hr>
+
+		<h4><a name="2015" href="http://web.physics.udel.edu/about/directory/faculty/thomas-k-gaisser" target="_blank">3. Prof. Thomas K. Gaisser, Bartol Research Institute, University of Delaware, USA</a></h4>
+			<img src="./images/homibhabhaawardpics/thomas.jpg" alt="" hspace="100">
+			<p><font size="4" color="blue"><a href="http://icrc2015.nl/prizes-awards/iupap-tifr-homi-bhabha-medal-medal-prize-2015">Awarded in "34th ICRC 2015, The Hague"</a></font></p>
+			<h6>Visited India in Jan 2017 and delivered public lectures</h6>
+			<p><i style="color:#FF8080">1. At Cosmic Ray Laboratory, Ooty</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=278" target="_blank">Cosmic particles - messengers from outer space</a> <br>   Venue : Anna stadium, Ooty on 18-01-2017 14:00 Hrs<br><i style="color:#FF8080">2. At Tata Institute of Fundamental Research, Mumbai</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=281" target="_blank">Cosmic-rays with IceCube and IceTop at the South Pole</a> <br> Venue : Dr. Homi Bhabha Auditorium, TIFR, Mumbai on 20-01-2017 17:30 Hrs</p>
+            <hr>
+
+		<h4><a name="2017" href="https://www2.physics.ox.ac.uk/contacts/people/sarkar" target="_blank">4. Prof. Subir Sarkar,  University of Oxford, United Kingdom and Niels Bohr Institute, Copenhagen, Denmark</a></h4>
+			<img src="./images/homibhabhaawardpics/subir copy.jpg" alt="" hspace="100" width="180">
+			<p><font size="4" color="blue"><a href="http://www.icrc2017.org/index.php?hCode=PRIZE_08_03">Awarded in "35th ICRC 2017, Busan"</a></font></p>
+			<h6>Visited India in Dec 2018 and delivered public lectures</h6>
+			<p><i style="color:#FF8080">1. At Cosmic Ray Laboratory, Ooty</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=532" target="_blank">Connecting inner space and outer space</a> <br>   Venue : HADP auditorium, Ooty on 17-12-2018 14:00 Hrs<br><i style="color:#FF8080">2. At Tata Institute of Fundamental Research, Mumbai</i> <br> Title : <a href="http://grapes-3.tifr.res.in/indico/conferenceDisplay.py?confId=533" target="_blank">Connecting inner space and outer space</a> <br> Venue : Dr. Homi Bhabha Auditorium, TIFR, Mumbai on 07-01-2019 17:30 Hrs</p>
+		    <hr>
+
+        <h4><a name="2019" href="https://www.ipmu.jp/en/takaaki-kajita" target="_blank">5. Prof. Takaaki Kajita, Institute for Cosmic Ray Research, Tokyo, Japan and University of Tokyo, Japan</a></h4>
+            <img src="./images/homibhabhaawardpics/kajita.jpg" alt="" hspace="100" width="180&quot;">
+            <p><font size="4" color="blue"><a href="https://www.icrc2019.org/iupap-tifr-homi-bhabha-medal-and-prize.html">Awarded in "36th ICRC 2019, Madison, WI"</a></font></p>
+		    <hr>
+
+        <h4><a name="2021" href="https://wipac.wisc.edu/people/faculty/francis-halzen/" target="_blank">6. Prof. Francis Halzen, University of Wisconsin, Madison, USA</a></h4>
+            <img src="./images/homibhabhaawardpics/francis.jpg" alt="" hspace="100" width="180&quot;">
+            <p><font size="4" color="blue"><a href="https://icrc2021.desy.de/awards_amp_prizes/#e122048">Awarded in "37th ICRC 2021, Berlin"</a></font></p>
+            <hr>
+        <h4><a name="2023" href="https://physics.mit.edu/faculty/samuel-ting/" target="_blank">7. Prof. Samuel C. C. Ting, MIT, USA</a></h4>
+            <img src="./images/homibhabhaawardpics/samuel.jpg" alt="" hspace="100" width="180&quot;">
+            <p><font size="4" color="blue"><a href="https://www.icrc2023.org/awards/">Awarded in "38th ICRC 2023, Nagoya"</a></font></p>
+            <hr>
+    </div>
+    </div>
+    </div>
+          <!--footer start-->
+          <div id="footer-space">
+          </div>
+          <script>
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-space").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+          </script>
+            <!--footer end-->
+             
+            <script src="./js/main.js"></script>
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <script>
+                function fontchange(n){
+                    var text = document.getElementById('iupap-text');
+                    var elements = text.querySelectorAll('*:not(h1):not(h2):not(h4)');
+        
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.fontSize = n + "px";
+                }
+                }
+                  var buttons = document.querySelector(".buttons");
+                  var button = buttons.querySelectorAll(".button");
+            </script>
+</body>
+</html>

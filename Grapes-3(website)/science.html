@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <float>
+            <div class="buttons bg-dark pt-2 pb-2">
+              <a class="font-inc" onclick="fontchange(12)">-A</a>
+              <a class="font-inc" onclick="fontchange(16)">A</a>
+              <a class="font-inc" onclick="fontchange(26)" style="padding-right: 4%;">A+</a>
+            </div>
+            </float>
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="color-switcher-btn"><i class="fa fa-cog fa-2x"></i></button>
+            <div id="color-switcher">
+                <form class="color-picker">
+                  <fieldset>
+                    <legend class="visually-hidden">Pick a color scheme</legend>
+                
+                    <label for="blue" class="visually-hidden">Blue theme</label>
+                    <input type="radio" id="blue" name="theme">
+                
+                    <label for="green" class="visually-hidden">Green theme</label>
+                    <input type="radio" id="green" name="theme">
+               
+                    <label for="red" class="visually-hidden">Red theme</label>
+                    <input type="radio" id="red" name="theme">
+                  </fieldset>
+                </form>
+            </div>
+
+        <!--Navbar start-->
+        <div id="navbar">
+        </div>
+        <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation:', error));
+        </script>
+      <!--Navbar end-->
+</header>
+<div id="science-text">
+<div class="subpage-head">
+  <h1>Science</h1>
+</div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;" id="objectives">Objectives</h2>
+    <p>Study of</p>
+        <li>The origin, acceleration and propagation of &gt;10<sup>14</sup> eV cosmic rays in the galaxy and beyond.</li>
+        <li>Existence of “<i>Knee</i>” in the energy spectrum of cosmic rays.</li>
+        <li>Production and/or acceleration of highest energy (~10<sup>20</sup> eV) cosmic rays in the universe.</li>
+        <li>Astronomy of multi-TeV γ-rays from neutron stars and other compact object.</li>
+        <li>Sun the closest astrophysical object, accelerator of energetic particles and its effects on the Earth.</li>
+    <hr>
+    </div>
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;" id="important-results">Important Results</h2>
+    <h5>1.Measurement of the Electrical Properties of a Thundercloud Through Muon Imaging by the GRAPES-3 Experiment</h5>
+    <p>The GRAPES-3 muon telescope recorded rapid (∼10 min) variations in the muon
+        intensity during major thunderstorms. Out of a total of 184 thunderstorms recorded during the interval of
+        April 2011–December 2014, the one on December 1, 2014 produced a massive potential of 1.3 GV. The
+        electric field measured by four well-separated (up to 6 km) monitors on the ground was used to help
+        estimate some of the properties of this thundercloud, including its altitude and area that were found to be
+        11.4 km above mean sea level and ≥ 380 km2, respectively. A charging time of 6 min to reach 1.3 GV
+        implied the delivery of a power of ≥ 2 GW by this thundercloud that was moving at a speed of
+        ∼60 km h−1. This work possibly provides the first direct evidence for the generation of gigavolt potentials
+        in thunderclouds that could also possibly explain the production of highest-energy (100 MeV) gamma rays
+        in the terrestrial gamma-ray flashes.</p>
+    <h5>2.Transient Weakening of Earth’s Magnetic Shield Probed by a Cosmic Ray Burst</h5>
+    <p>The GRAPES-3 tracking muon telescope in Ooty, India measured muon intensity at high cutoff rigidities (15–24 GV) along nine independent directions covering 2.3 sr. The arrival of a coronal mass ejection on 22 June 2015 18:40 UT had triggered a severe G4-class geomagnetic storm (storm). Starting 19:00 UT, the GRAPES-3 muon telescope recorded a 2 h high-energy (
+        ∼20GeV) burst of galactic cosmic rays (GCRs) that was strongly correlated with a 40 nT surge in the interplanetary magnetic field (IMF). Simulations have shown that a large (17×) compression of the IMF to 680 nT, followed by reconnection with the geomagnetic field (GMF) leading to lower cutoff rigidities could generate this burst. Here, 680 nT represents a short-term change in GMF around Earth, averaged over 7 times its volume. The GCRs, due to lowering of cutoff rigidities, were deflected from Earth’s day side by ∼210°
+         in longitude, offering a natural explanation of its night-time detection by the GRAPES-3. The simultaneous occurrence of the burst in all nine directions suggests its origin close to Earth. It also indicates a transient weakening of Earth’s magnetic shield, and may hold clues for a better understanding of future superstorms that could cripple modern technological infrastructure on Earth, and endanger the lives of the astronauts in space.</p>
+    
+    <hr>
+    </div>
+
+
+    <div class="subpage-text site-text">
+    <h2 style="text-align: center;" id="news">News</h2>
+    <div id="news-list">
+        <ol class="list"><li><p class="name"><a href="https://qrius.com/the-latest-technology-in-indias-space-arsenal/" target="_blank">The latest technology in India’s space
+            arsenal</a><i><font size="1"> qrius.com</font></i></p></li>
+            <li><p class="name"><a href="http://themango.co/science/ooty-a-place-for-science-lovers-too/" target="_blank">Ooty - A place for science lovers too!</a>
+            <i><font size="1">themango.co</font></i></p></li>
+            <li><p class="name"><a href="http://thewire.in/78251/solar-cme-geomagnetic-grapes/" target="_blank">How Earth’s Magnetic Shield Was Breached – and a
+            Telescope in Ooty Tuned in</a>   <i><font size="1">thewire.in</font></i></p></li>
+            <li><p class="name"><a href="http://www.careerride.com/mchoice/crack-in-earths-magnetic-shield-recorded-25305.aspx" target="_blank">Crack in earth’s magnetic shield recorded</a>
+            <i><font size="1">www.careerride.com</font></i></p></li>
+            <li><p class="name"><a href="http://steamregister.com/cosmic-burst-cracked-earths-magnetic-field-wide-open/" target="_blank">Cosmic Burst Cracked Earth’s Magnetic Field Wide
+            Open</a>   <i><font size="1">steamregister.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.innovations-report.com/html/reports/physics-astronomy/grapes-3-indicates-a-crack-in-earth-s-magnetic-shield.html" target="_blank">GRAPES-3 indicates a crack in Earth's magnetic
+            shield</a>   <i><font size="1">wwww.innovations-report.com</font></i></p></li>
+            <li><p class="name"><a href="https://weather.com/science/space/news/earth-magnetic-field-crack-solar-flare-radiation" target="_blank">Burst From a Solar Flare Cracked Our Planet's
+            Protective Barrier, Caused Radio Blackouts, Study Says</a><i><font size="1">weather.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.freepressjournal.in/webspecial/indian-scientists-detect-crack-in-earths-magnetic-shield/966316" target="_blank">Indian scientists detect crack in Earth’s
+            magnetic shield</a><i><font size="1">www.freepressjournal.in</font></i></p></li>
+            <li><p class="name"><a href="http://www.msn.com/en-in/news/techandscience/indian-scientists-detect-crack-in-earths-magnetic-shield/ar-AAjRkHt?srcref=rss" target="_blank">Indian scientists detect crack in Earth's
+            magnetic shield</a><i><font size="1">www.msn.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.spacedaily.com/reports/Cosmic-ray_detector_finds_possible_crack_in_Earths_magnetic_shield_999.html" target="_blank">Cosmic-ray detector finds possible crack in
+            Earth's magnetic shield</a><i><font size="1">www.spacedaily.com</font></i></p></li>
+            <li><p class="name"><a href="http://mysteriousuniverse.org/2016/11/massive-crack-in-earths-magnetic-shield-discovered/" target="_blank">Massive Crack in Earth’s Magnetic Shield
+            Discovered</a><i><font size="1">mysteriousuniverse.org</font></i></p></li>
+            <li><p class="name"><a href="http://www.techworm.net/2016/11/scientists-detect-crack-earths-magnetic-shield.html" target="_blank">Scientists detect a crack in Earth’s magnetic
+            shield</a><i><font size="1">www.techwork.net</font></i></p></li>
+            <li><p class="name"><a href="http://tamil.oneindia.com/news/india/indian-scientists-detect-crack-earths-magnetic-shield-266323.html" target="_blank">பூமியின் காந்தப் புலத்தில் விரிசல்? இந்திய விஞ்ஞானிகள் தகவல்</a>
+            <i><font size="1">tamil.oneindia.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.vikatan.com/news/miscellaneous/71300-indian-scientists-detect-crack-in-earths-magnetic-shield.art" target="_blank">பூமி காந்தப்புலத்தில் விரிசல்: இந்திய விஞ்ஞானிகள் கண்டுபிடிப்பு</a>
+            <i><font size="1">www.vikatan.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.vikatan.com/news/miscellaneous/71379-ooty-tata-research-centre-have-detected-a-crack-in-earths-magnetic-shield.art" target="_blank">பூமியின் காந்தப்புலத்தில் விரிசல்..என்ன மாதிரியான பாதிப்புகளை
+            ஏற்படுத்தும்?</a><i><font size="1">www.vikatan.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.dinamalar.com/news_detail.asp?id=1642156" target="_blank">புவி காந்தப்புலத்தில் பிளவு: ஊட்டி கதிர் வீச்சு ஆராய்ச்சியில் உறுதி</a>
+            <i><font size="1">www.dinamalar.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.upi.com/Science_News/2016/11/03/Cosmic-ray-detector-finds-possible-crack-in-Earths-magnetic-shield/4681478178280/" target="_blank">Cosmic-ray detector finds possible crack in
+            Earth's magnetic shield</a><i><font size="1">www.upi.com</font></i></p></li>
+            <li><p class="name"><a href="https://www.sott.net/article/333056-Cosmic-ray-detector-finds-possible-crack-in-Earths-magnetic-shield" target="_blank">Cosmic-ray detector finds possible crack in
+            Earth's magnetic shield</a><i><font size="1">www.sott.net</font></i></p></li>
+            <li><p class="name"><a href="http://www.iflscience.com/space/solar-storm-crack-earths-magnetic-field/" target="_blank">A Solar Storm Put A Crack In Earth's Magnetic
+            Field</a><i><font size="1">www.iflscience.com</font></i></p></li>
+            <li><p class="name"><a href="http://talkradio.co.uk/news/scientists-fear-cosmic-rays-could-one-day-batter-earth-after-finding-crack-magnetic-shield" target="_blank">Scientists fear cosmic rays could one day batter
+            earth after finding crack in magnetic shield</a><i><font size="1">tailkradio.co.uk</font></i></p></li>
+            <li><p class="name"><a href="http://www.hindustantimes.com/tech/indian-scientists-detect-crack-in-earth-s-magnetic-shield/story-PSWNBbaRpWfWUDAe7ZwDCJ.html" target="_blank">Indian scientists detect crack in Earth’s
+            magnetic shield</a><i><font size="1">www.hindustantimes.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.sciencealert.com/scientists-have-detected-a-crack-in-earth-s-magnetic-shield" target="_blank">Scientists have detected a crack in Earth's
+            magnetic shield</a><i><font size="1">www.sciencealert.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.natureworldnews.com/articles/31155/20161104/india-telescope-detects-crack-earth-magnetic-shield.htm" target="_blank">India’s Telescope Detects Crack in the Earth’s
+            Magnetic Shield</a><i><font size="1">www.natureworldnews.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.wired.co.uk/article/cosmic-rays-burst-magnetic-shield" target="_blank">Galactic cosmic rays burst through a crack in
+            Earth's magnetic shield</a><i><font size="1">www.wired.co.uk</font></i></p></li>
+            <li><p class="name"><a href="http://mumbaimirror.indiatimes.com/others/sci-tech/Scientists-detect-crack-in-Earths-magnetic-shield/articleshow/55229865.cms" target="_blank">SCIENTISTS DETECT CRACK IN EARTH’S MAGNETIC
+            SHIELD</a><i><font size="1">mumbaimirror.indiatimes.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.dailymail.co.uk/sciencetech/article-3901288/Is-Earth-s-protective-shield-cracking-Bursts-deadly-cosmic-rays-raises-fears-planet-s-magnetic-field-disappearing.html" target="_blank">Is Earth's protective shield cracking? Bursts of
+            deadly cosmic rays raises fears that our planet's magnetic field
+            is disappearing</a><i><font size="1">www.dailymail.co.uk</font></i></p></li>
+            <li><p class="name"><a href="http://timesofindia.indiatimes.com/home/science/Indian-scientists-detect-crack-in-Earths-magnetic-shield/articleshow/55227869.cms" target="_blank">Indian scientists detect crack in Earth's
+            magnetic shield</a><i><font size="1">timesofindia.indiatimes.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.deccanchronicle.com/science/science/051116/cosmic-ray-lab-scientists-track-solar-storm.html" target="_blank">Cosmic Ray lab scientists track solar storm</a>
+            <i><font size="1">www.deccanchronicle.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.deccanchronicle.com/technology/in-other-news/031116/indian-scientists-detect-crack-in-earths-magnetic-shield.html" target="_blank">Indian scientists detect crack in Earth's
+            magnetic shield</a><i><font size="1">www.deccanchronicle.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.ptinews.com/r_a_s/_318349" target="_blank">Indian scientists detect crack in Earth's
+            magnetic shield</a><i><font size="1">www.ptinews.com</font></i></p></li>
+            <li><p class="name"><a href="https://www.eurekalert.org/pub_releases/2016-11/tiof-gia110216.php" target="_blank">GRAPES-3 indicates a crack in Earth's magnetic
+            shield</a><i><font size="1">www.eurekalert.org</font></i></p></li>
+            <li><p class="name"><a href="http://phys.org/news/2016-11-grapes-earth-magnetic-shield.html" target="_blank">GRAPES-3 indicates a crack in Earth's magnetic
+            shield</a><i><font size="1">phys.org</font></i></p></li>
+            <li><p class="name"><a href="https://www.nature.com/articles/nindia.2016.141" target="_blank">GRAPES-3 cosmic ray muon telescope detects crack
+            in Earth's magnetic field</a><i><font size="1">www.nature.com</font></i></p></li>
+            <li><p class="name"><a href="http://egno.gr/2016/10/giino-magnitiko-pedio-paratirithike-mia-rogmi-stin-prostateftiki-aspida-tis-gis/" target="_blank">Earth's magnetic field: There was a crack in the
+            Earth's protective shield</a><i><font size="1">egno.gr</font></i> (English version <a href="https://grapes-3.tifr.res.in/doc/egno.gr.pdf" target="_blank">PDF</a>)</p></li>
+            <li><p class="name"><a href="http://revealedtheninthwave.blogspot.in/2016/10/blog-post_708.html" target="_blank">Earth's magnetic field: There was a crack in the
+            Earth's protective shield</a><i><font size="1">revealedtheninthwave.blogspot.in</font></i> (English version <a href="https://grapes-3.tifr.res.in/doc/revealedtheninthwave.blogspot.in.pdf" target="_blank">PDF</a>)</p></li>
+            <li><p class="name"><a href="http://www.sciencemag.org/news/2016/10/solar-storms-can-weaken-earth-s-magnetic-field" target="_blank">Solar storms can weaken Earth’s magnetic
+            field</a><i><font size="1">www.sciencemag.org</font></i></p></li>
+            <li><p class="name"><a href="http://www.nature.com/news/cosmic-rays-may-threaten-space-weather-satellite-1.20880" target="_blank">Cosmic rays may threaten space-weather
+            satellite</a><i><font size="1">www.nature.com</font></i></p></li>
+            <li><p class="name"><a href="http://www.thehindu.com/sci-tech/science/indian-muon-trackers-get-a-handle-on-solar-storms/article9281700.ece" target="_blank">Indian muon trackers get a handle on solar
+            storms</a><i><font size="1">thehindu.com</font></i></p></li>
+            <li><p class="name"><a href="http://culturacientifica.com/2016/10/26/una-brecha-escudo/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+CuadernoDeCulturaCientfica+%28Cuaderno+de+Cultura+Cient%C3%ADfica%29" target="_blank">A gap in our shield</a>   <i><font size="1">culturacientifica.com</font></i> (English version <a href="https://grapes-3.tifr.res.in/doc/culturacientifica.pdf" target="_blank">PDF</a>)</p></li><li><p class="name"><a href="http://www.vozpopuli.com/next/Obama-razon-prepararse-tormenta-solar_0_965903978.html" target="_blank">Obama is right, we must prepare for the big
+            solar storm</a><i><font size="1">www.vozpopuli.com</font></i>
+            (English version<a href="https://grapes-3.tifr.res.in/doc/vozpopuli.pdf" target="_blank">PDF</a>)</p></li>
+            <li><p class="name"><a href="http://www.formaciononlinenutridermo.com/obama-razon-prepararse-la-gran-tormenta-solar/" target="_blank">Obama is right, we must prepare for the big
+            solar storm</a><i><font size="1">www.formaciononlinenutridermo.com</font></i> (English version <a href="https://grapes-3.tifr.res.in/doc/formaciononlinenutridermo.com.pdf" target="_blank">PDF</a>)</p></li>
+            <li><p class="name"><a href="http://physics.aps.org/synopsis-for/10.1103/PhysRevLett.117.171101" target="_blank" class="">Synopsis: A Crack in Earth’s Protective
+            Shield</a><i><font size="1">physics.aps.org</font></i></p></li>
+            <li><p class="name"><a href="http://physicsworld.com/cws/article/news/2016/oct/21/flash-physics-physicists-call-for-food-strategy-lhc-trio-bag-prize-cosmic-rays-elude-geomagnetic-field" target="_blank" class="">Cosmic rays get past Earth's magnetic
+            field</a><i><font size="1">physicsword.com</font></i></p></li>
+            <li><p class="name"><a href="https://www.theguardian.com/science/across-the-universe/live/2016/feb/11/gravitational-wave-announcement-latest-physics-einstein-ligo-black-holes-live" target="_blank">gravitational waves: breakthrough discovery
+            announced - as it happened</a><font size="1"><a href="https://www.explainxkcd.com/wiki/index.php/1642" target="_blank"><i>.....know more about gravitaional
+            waves</i></a></font></p></li>
+        </ol>
+        <!--<ul class="pagination"></ul>-->
+      </div>
+    </div>
+
+
+
+
+
+        <!--footer start-->
+        <div id="footer-space">
+    </div>
+    <script>
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-space").innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching navigation:', error));
+    </script>
+    <!--footer end-->
+        
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        function fontchange(n){
+            var text = document.getElementById('science-text');
+            var elements = text.querySelectorAll('*:not(h1):not(h2):not(h5)');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.fontSize = n + "px";
+        }
+        }
+            var buttons = document.querySelector(".buttons");
+            var button = buttons.querySelectorAll(".button");
+    </script>
+</body>
+</html>
